@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meta Ads Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.22.0/dist/tabler-icons.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f4f4f2;
+      --surface: #ffffff;
+      --surface2: #f9f9f8;
+      --border: rgba(0,0,0,0.08);
+      --border-strong: rgba(0,0,0,0.14);
+      --text: #1a1a18;
+      --text-sec: #5a5a56;
+      --text-muted: #9a9a94;
+      --accent: #2563eb;
+      --accent-bg: #eff6ff;
+      --accent-text: #1d4ed8;
+      --success: #16a34a;
+      --success-bg: #f0fdf4;
+      --success-text: #15803d;
+      --warning: #d97706;
+      --warning-bg: #fffbeb;
+      --warning-text: #b45309;
+      --danger: #dc2626;
+      --danger-bg: #fef2f2;
+      --danger-text: #b91c1c;
+      --pro: #7c3aed;
+      --pro-bg: #f5f3ff;
+      --pro-text: #6d28d9;
+      --radius: 8px;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    #loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      gap: 12px;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    #loading .spinner {
+      width: 32px; height: 32px;
+      border: 2px solid var(--border-strong);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    #error-msg {
+      display: none;
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--danger-text);
+      font-size: 14px;
+    }
+
+    #app { display: none; max-width: 1100px; margin: 0 auto; padding: 0 0 40px; }
+
+    .page-header {
+      padding: 20px 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .page-title { font-size: 18px; font-weight: 500; }
+
+    .last-updated {
+      font-size: 11px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .owner-tabs {
+      display: flex;
+      gap: 6px;
+      padding: 16px 20px 0;
+      border-bottom: 0.5px solid var(--border-strong);
+      overflow-x: auto;
+    }
+
+    .owner-tab {
+      padding: 8px 18px;
+      font-size: 13px;
+      border: 0.5px solid transparent;
+      border-bottom: none;
+      border-radius: 8px 8px 0 0;
+      cursor: pointer;
+      color: var(--text-muted);
+      background: transparent;
+      white-space: nowrap;
+      transition: color 0.15s;
+    }
+
+    .owner-tab:hover { color: var(--text); }
+
+    .owner-tab.active {
+      background: var(--surface);
+      border-color: var(--border-strong);
+      border-bottom: 1px solid var(--surface);
+      color: var(--text);
+      font-weight: 500;
+      margin-bottom: -1px;
+    }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 20px;
+      gap: 10px;
+      flex-wrap: wrap;
+      background: var(--surface);
+      border-bottom: 0.5px solid var(--border);
+    }
+
+    .sub-tabs {
+      display: flex;
+      gap: 4px;
+      background: var(--bg);
+      border-radius: var(--radius);
+      padding: 3px;
+    }
+
+    .sub-tab {
+      padding: 6px 14px;
+      font-size: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      color: var(--text-muted);
+      border: none;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: color 0.15s;
+    }
+
+    .sub-tab:hover { color: var(--text); }
+
+    .sub-tab.active {
+      background: var(--surface);
+      color: var(--text);
+      font-weight: 500;
+      border: 0.5px solid var(--border-strong);
+    }
+
+    select {
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: var(--radius);
+      border: 0.5px solid var(--border-strong);
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .summary-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      padding: 14px 20px;
+      background: var(--surface);
+      border-bottom: 0.5px solid var(--border);
+    }
+
+    @media (max-width: 600px) { .summary-bar { grid-template-columns: repeat(2,1fr); } }
+
+    .sum-card {
+      background: var(--surface2);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+    }
+
+    .sum-header { display: flex; align-items: center; gap: 5px; }
+
+    .sum-label { font-size: 11px; font-weight: 500; color: var(--text); }
+
+    .info-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      color: var(--text-muted);
+      font-size: 13px;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      transition: color 0.15s;
+    }
+
+    .info-btn:hover { color: var(--text); }
+
+    .hint {
+      font-size: 9.5px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin: 4px 0;
+      display: none;
+    }
+
+    .hint.open { display: block; }
+
+    .sum-val { font-size: 20px; font-weight: 500; color: var(--text); margin-top: 4px; }
+    .sum-sub { font-size: 10px; color: var(--text-muted); margin-top: 2px; }
+
+    .section { padding: 16px 20px 4px; }
+
+    .sales-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 12px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 0.5px solid var(--border-strong);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .card-header {
+      padding: 14px 16px 12px;
+      border-bottom: 0.5px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .card-name { font-size: 14px; font-weight: 500; }
+    .card-account { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+    .card-perf { font-size: 10px; color: var(--text-muted); margin-top: 3px; }
+
+    .perf-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      display: inline-block; margin-left: 6px; vertical-align: middle;
+    }
+
+    .dot-good { background: var(--success); }
+    .dot-avg  { background: var(--warning); }
+    .dot-low  { background: var(--danger); }
+
+    .rank-badge {
+      font-size: 11px;
+      font-weight: 500;
+      padding: 3px 10px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    .rank-1 { background: var(--success-bg); color: var(--success-text); }
+    .rank-2 { background: var(--warning-bg); color: var(--warning-text); }
+    .rank-3 { background: var(--danger-bg);  color: var(--danger-text);  }
+    .rank-x { background: var(--bg);         color: var(--text-muted);   }
+
+    .stats-grid { display: grid; grid-template-columns: repeat(2,1fr); }
+
+    .stat-item {
+      padding: 10px 14px;
+      border-bottom: 0.5px solid var(--border);
+      border-left: 0.5px solid var(--border);
+    }
+
+    .stat-item:nth-child(odd) { border-left: none; }
+
+    .stat-header { display: flex; align-items: center; gap: 5px; margin-bottom: 4px; }
+    .stat-label  { font-size: 11px; font-weight: 500; color: var(--text); }
+    .stat-val    { font-size: 15px; font-weight: 500; }
+    .stat-change { font-size: 10px; margin-top: 3px; color: var(--text-muted); }
+    .up   { color: var(--success); }
+    .down { color: var(--danger);  }
+
+    .metric-row {
+      padding: 10px 14px;
+      border-bottom: 0.5px solid var(--border);
+    }
+
+    .metric-header { display: flex; align-items: center; gap: 5px; }
+    .metric-label  { font-size: 11px; font-weight: 500; color: var(--text); }
+    .metric-val    { font-size: 12px; font-weight: 500; color: var(--accent-text); margin-top: 5px; }
+    .metric-muted  { font-size: 11px; color: var(--text-muted); margin-top: 4px; font-style: italic; }
+
+    .ads-toggle {
+      padding: 10px 14px;
+      font-size: 11px;
+      color: var(--text-muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 0.5px solid var(--border);
+      transition: color 0.15s;
+    }
+
+    .ads-toggle:hover { color: var(--text); }
+
+    .ad-mini {
+      padding: 9px 14px;
+      border-top: 0.5px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .thumb-sm {
+      width: 44px; height: 44px;
+      border-radius: 6px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .thumb-sm img { width: 100%; height: 100%; object-fit: cover; border-radius: 6px; }
+    .th-video { background: var(--pro-bg);     color: var(--pro-text);     font-size: 16px; }
+    .th-image { background: var(--accent-bg);  color: var(--accent-text);  font-size: 16px; }
+
+    .ad-mini-info { flex: 1; min-width: 0; }
+    .ad-mini-camp { font-size: 10px; color: var(--text-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .ad-mini-name { font-size: 11px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-top: 1px; }
+    .ad-mini-spend { font-size: 11px; font-weight: 500; white-space: nowrap; }
+
+    .ads-main-grid { display: flex; flex-direction: column; gap: 12px; }
+
+    .ad-card {
+      background: var(--surface);
+      border: 0.5px solid var(--border-strong);
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .ad-card-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .thumb-lg {
+      width: 68px; height: 68px;
+      border-radius: 8px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-size: 26px;
+    }
+
+    .thumb-lg img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; }
+
+    .ad-card-info { flex: 1; min-width: 0; }
+    .ad-card-camp { font-size: 11px; color: var(--text-muted); margin-bottom: 2px; }
+    .ad-card-name { font-size: 13px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+    .ad-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
+
+    .tag { font-size: 10px; padding: 2px 8px; border-radius: 10px; display: inline-flex; align-items: center; gap: 3px; }
+    .tag-video { background: var(--pro-bg);     color: var(--pro-text);    }
+    .tag-image { background: var(--accent-bg);  color: var(--accent-text); }
+    .tag-sales { background: var(--warning-bg); color: var(--warning-text);}
+    .tag-rank  { background: var(--success-bg); color: var(--success-text);}
+
+    .ad-link {
+      font-size: 10px;
+      color: var(--accent-text);
+      text-decoration: none;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      margin-top: 2px;
+    }
+
+    .ad-link:hover { text-decoration: underline; }
+
+    .ad-metrics { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; }
+
+    .am {
+      text-align: center;
+      padding: 9px 6px;
+      background: var(--surface2);
+      border-radius: var(--radius);
+    }
+
+    .am-top { display: flex; align-items: center; justify-content: center; gap: 3px; margin-bottom: 3px; }
+    .am-label { font-size: 10px; font-weight: 500; }
+    .am-hint { font-size: 9px; color: var(--text-muted); line-height: 1.3; margin-bottom: 4px; display: none; text-align: center; }
+    .am-hint.open { display: block; }
+    .am-val  { font-size: 14px; font-weight: 500; }
+    .am-sub  { font-size: 9px; color: var(--text-muted); margin-top: 1px; }
+
+    .rr-row {
+      margin-top: 10px;
+      padding: 9px 12px;
+      background: var(--surface2);
+      border-radius: var(--radius);
+    }
+
+    .rr-header { display: flex; align-items: center; gap: 5px; }
+    .rr-hint { font-size: 9.5px; color: var(--text-muted); line-height: 1.4; margin: 4px 0; display: none; }
+    .rr-hint.open { display: block; }
+    .rr-val { font-size: 12px; font-weight: 500; color: var(--accent-text); margin-top: 4px; }
+
+    .empty-state {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+    .empty-state i { font-size: 32px; display: block; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+
+<div id="loading">
+  <div class="spinner"></div>
+  <span>جاري تحميل البيانات...</span>
+</div>
+
+<div id="error-msg">
+  <i class="ti ti-alert-circle" style="font-size:32px;display:block;margin-bottom:8px"></i>
+  تعذّر تحميل البيانات. تأكد من اتصالك بالإنترنت وأعد تحديث الصفحة.
+</div>
+
+<div id="app">
+  <div class="page-header">
+    <div class="page-title"><i class="ti ti-chart-bar" aria-hidden="true"></i> Meta Ads Dashboard</div>
+    <div class="last-updated"><i class="ti ti-refresh" aria-hidden="true"></i> <span id="lastUpdated">—</span></div>
+  </div>
+
+  <div class="owner-tabs" id="ownerTabs"></div>
+
+  <div class="toolbar">
+    <div class="sub-tabs">
+      <button class="sub-tab active" onclick="setTab(this,'sales')"><i class="ti ti-users" aria-hidden="true"></i> السيلز</button>
+      <button class="sub-tab" onclick="setTab(this,'ads')"><i class="ti ti-ad-2" aria-hidden="true"></i> الإعلانات</button>
+    </div>
+    <select id="monthSel" onchange="setMonth(this.value)"></select>
+  </div>
+
+  <div class="summary-bar">
+    <div class="sum-card">
+      <div class="sum-header">
+        <span class="sum-label" id="lTotal">إجمالي الصرف</span>
+        <button class="info-btn" onclick="tH(this)" aria-label="شرح"><i class="ti ti-info-circle" aria-hidden="true"></i></button>
+      </div>
+      <div class="hint">المبلغ الكلي المصروف على الإعلانات في الشهر ده</div>
+      <div class="sum-val" id="sTotal">—</div>
+      <div class="sum-sub">جنيه مصري</div>
+    </div>
+    <div class="sum-card">
+      <div class="sum-header">
+        <span class="sum-label" id="lMsg">إجمالي المسدجات</span>
+        <button class="info-btn" onclick="tH(this)" aria-label="شرح"><i class="ti ti-info-circle" aria-hidden="true"></i></button>
+      </div>
+      <div class="hint" id="dMsg">عدد الرسائل الواردة من الإعلانات</div>
+      <div class="sum-val" id="sMsg">—</div>
+      <div class="sum-sub" id="sMsgSub"></div>
+    </div>
+    <div class="sum-card">
+      <div class="sum-header">
+        <span class="sum-label" id="lClients">إجمالي العملاء</span>
+        <button class="info-btn" onclick="tH(this)" aria-label="شرح"><i class="ti ti-info-circle" aria-hidden="true"></i></button>
+      </div>
+      <div class="hint" id="dClients">العملاء اللي وقّعوا عقد بالفعل</div>
+      <div class="sum-val" id="sClients">—</div>
+      <div class="sum-sub" id="sClientsSub">عقد</div>
+    </div>
+    <div class="sum-card">
+      <div class="sum-header">
+        <span class="sum-label" id="lCPC">متوسط تكلفة العميل</span>
+        <button class="info-btn" onclick="tH(this)" aria-label="شرح"><i class="ti ti-info-circle" aria-hidden="true"></i></button>
+      </div>
+      <div class="hint" id="dCPC">كل عميل واحد كلّف الشركة كام جنيه في المتوسط</div>
+      <div class="sum-val" id="sCPC">—</div>
+      <div class="sum-sub" id="sCPCSub">جنيه / عميل</div>
+    </div>
+  </div>
+
+  <div class="section" id="salesSection"><div class="sales-grid" id="salesGrid"></div></div>
+  <div class="section" id="adsSection" style="display:none"><div class="ads-main-grid" id="adsGrid"></div></div>
+</div>
+
+<script>
+const DATA_URL = 'https://raw.githubusercontent.com/ameerellwaa-rgb/ads-dashboard/main/data.json';
+
+const OWNER_MAP = {
+  'Ellwaa one': 'أستاذ إيهاب',
+  'el1':        'أستاذ إيهاب'
+};
+
+function ownerOf(account) {
+  return OWNER_MAP[account] || 'غير محدد';
+}
+
+let G = {};
+let currentTab = 'sales';
+let currentMonth = '';
+let currentOwner = '';
+let expandedCards = {};
+
+const fmt = n => Math.round(n).toLocaleString('ar-EG');
+const fmtD = (n, d) => Number(n).toFixed(d);
+
+function tH(btn) {
+  const h = btn.parentElement.nextElementSibling;
+  if (!h || !h.classList.contains('hint')) return;
+  h.classList.toggle('open');
+  btn.querySelector('i').className = h.classList.contains('open')
+    ? 'ti ti-info-circle-filled' : 'ti ti-info-circle';
+}
+
+function tHid(id, btn) {
+  const h = document.getElementById(id);
+  if (!h) return;
+  h.classList.toggle('open');
+  btn.querySelector('i').className = h.classList.contains('open')
+    ? 'ti ti-info-circle-filled' : 'ti ti-info-circle';
+}
+
+function mkIB(id) {
+  return `<button class="info-btn" onclick="tHid('${id}',this)" aria-label="شرح"><i class="ti ti-info-circle" aria-hidden="true"></i></button>`;
+}
+
+function thumbSm(url, type) {
+  const cls = type === 'فيديو' ? 'th-video' : 'th-image';
+  const ico = type === 'فيديو' ? 'ti-player-play' : 'ti-photo';
+  if (url) {
+    return `<div class="thumb-sm ${cls}"><img src="${url}" alt="${type}" loading="lazy" onerror="this.parentElement.innerHTML='<i class=\\'ti ${ico}\\' aria-hidden=\\'true\\'></i>'"></div>`;
+  }
+  return `<div class="thumb-sm ${cls}"><i class="ti ${ico}" aria-hidden="true"></i></div>`;
+}
+
+function thumbLg(url, type) {
+  const cls = type === 'فيديو' ? 'th-video' : 'th-image';
+  const ico = type === 'فيديو' ? 'ti-player-play' : 'ti-photo';
+  if (url) {
+    return `<div class="thumb-lg ${cls}"><img src="${url}" alt="${type}" loading="lazy" onerror="this.parentElement.innerHTML='<i class=\\'ti ${ico}\\' style=\\'font-size:24px\\' aria-hidden=\\'true\\'></i>'"></div>`;
+  }
+  return `<div class="thumb-lg ${cls}"><i class="ti ${ico}" style="font-size:24px" aria-hidden="true"></i></div>`;
+}
+
+function buildOwnerTabs() {
+  const owners = [...new Set(Object.values(OWNER_MAP))];
+  const allOwners = [...new Set(
+    (G.salesPerformance || []).map(s => ownerOf(s.account))
+      .concat((G.ads || []).map(a => ownerOf(a.account)))
+  )].filter(Boolean);
+  const finalOwners = owners.filter(o => allOwners.includes(o));
+  if (finalOwners.length === 0) finalOwners.push('أستاذ إيهاب');
+
+  const container = document.getElementById('ownerTabs');
+  container.innerHTML = '';
+  finalOwners.forEach((o, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'owner-tab' + (i === 0 ? ' active' : '');
+    btn.textContent = o;
+    btn.onclick = () => setOwner(btn, o);
+    container.appendChild(btn);
+  });
+  currentOwner = finalOwners[0];
+}
+
+function buildMonthSelect() {
+  const sel = document.getElementById('monthSel');
+  const months = G.detailMonths || G.trendMonths || [];
+  sel.innerHTML = '';
+  months.forEach((m, i) => {
+    const opt = document.createElement('option');
+    opt.value = m.key;
+    opt.textContent = m.label;
+    sel.appendChild(opt);
+  });
+  if (months.length) {
+    currentMonth = months[0].key;
+    sel.value = currentMonth;
+  }
+}
+
+function getAdsAggregated(month) {
+  const map = {};
+  (G.ads || []).filter(a => a.month === month).forEach(a => {
+    const key = a.ad_id || (a.campaign + '||' + a.ad);
+    if (!map[key]) {
+      map[key] = {
+        account: a.account,
+        campaign: a.campaign,
+        ad: a.ad,
+        ad_id: a.ad_id,
+        creativeType: a.creativeType,
+        creativeLink: a.creativeLink,
+        thumbnail_url: a.thumbnail_url,
+        salesperson: a.salesperson,
+        spend: 0, impressions: 0, messages: 0
+      };
+    }
+    map[key].spend      += parseFloat(a.spend)      || 0;
+    map[key].impressions += parseFloat(a.impressions) || 0;
+    map[key].messages   += parseFloat(a.messages)   || 0;
+    if (a.thumbnail_url) map[key].thumbnail_url = a.thumbnail_url;
+  });
+  Object.values(map).forEach(a => {
+    a.cost_per_message = a.messages > 0 ? a.spend / a.messages : 0;
+  });
+  return Object.values(map);
+}
+
+function getSalesData(month) {
+  return (G.salesPerformance || []).filter(s => s.month === month);
+}
+
+function renderSales(month) {
+  const items = getSalesData(month).filter(s => ownerOf(s.account) === currentOwner);
+  const allAds = getAdsAggregated(month).filter(a => ownerOf(a.account) === currentOwner);
+
+  const msgBySales = {};
+  allAds.forEach(a => {
+    msgBySales[a.salesperson] = (msgBySales[a.salesperson] || 0) + a.messages;
+  });
+
+  const totalSpend   = items.reduce((a, s) => a + (parseFloat(s.spend) || 0), 0);
+  const totalClients = items.reduce((a, s) => a + (parseInt(s.clients) || 0), 0);
+  const totalMsg     = Object.values(msgBySales).reduce((a, v) => a + v, 0);
+  const avgCPC       = totalClients > 0 ? totalSpend / totalClients : 0;
+
+  document.getElementById('sTotal').textContent   = fmt(totalSpend);
+  document.getElementById('sMsg').textContent     = fmt(totalMsg);
+  document.getElementById('sClients').textContent = totalClients;
+  document.getElementById('sCPC').textContent     = fmt(avgCPC);
+  document.getElementById('lMsg').textContent     = 'إجمالي المسدجات';
+  document.getElementById('dMsg').textContent     = 'عدد الرسائل الواردة من الإعلانات';
+  document.getElementById('lClients').textContent = 'إجمالي العملاء';
+  document.getElementById('dClients').textContent = 'العملاء اللي وقّعوا عقد بالفعل';
+  document.getElementById('lCPC').textContent     = 'متوسط تكلفة العميل';
+  document.getElementById('dCPC').textContent     = 'كل عميل واحد كلّف الشركة كام جنيه في المتوسط';
+  document.getElementById('sMsgSub').textContent  = '';
+  document.getElementById('sClientsSub').textContent = 'عقد';
+  document.getElementById('sCPCSub').textContent  = 'جنيه / عميل';
+
+  const sorted = [...items].sort((a, b) => {
+    const ca = a.clients > 0 ? a.spend / a.clients : Infinity;
+    const cb = b.clients > 0 ? b.spend / b.clients : Infinity;
+    return ca - cb;
+  });
+
+  const rankL = ['#1 الأول', '#2 الثاني', '#3 الثالث', '#4 الرابع', '#5 الخامس'];
+  const rankC = ['rank-1', 'rank-2', 'rank-3', 'rank-x', 'rank-x'];
+
+  const grid = document.getElementById('salesGrid');
+  grid.innerHTML = '';
+
+  if (sorted.length === 0) {
+    grid.innerHTML = '<div class="empty-state"><i class="ti ti-database-off"></i>لا توجد بيانات للشهر والحساب المحدد</div>';
+    return;
+  }
+
+  sorted.forEach((s, i) => {
+    const cpcVal = s.clients > 0 ? s.spend / s.clients : 0;
+    let perfCls, perfLbl;
+    if      (cpcVal <= avgCPC * 0.85) { perfCls = 'dot-good'; perfLbl = 'أداء ممتاز'; }
+    else if (cpcVal <= avgCPC * 1.15) { perfCls = 'dot-avg';  perfLbl = 'أداء متوسط'; }
+    else                               { perfCls = 'dot-low';  perfLbl = 'يحتاج تطوير'; }
+
+    const msgs = msgBySales[s.salesperson] || 0;
+    const msgsPerClient = s.clients > 0 ? Math.round(msgs / s.clients) : 0;
+    const costPerMsg = msgs > 0 ? s.spend / msgs : 0;
+
+    const mom = s.mom || {};
+    const spDelta  = parseFloat(mom.spendDelta)  || 0;
+    const clDelta  = parseFloat(mom.clientsDelta) || 0;
+
+    const key = s.salesperson;
+    const exp = expandedCards[key];
+    const sid = 'sp_' + i;
+
+    const salesAds = allAds.filter(a => a.salesperson === s.salesperson)
+                            .sort((a, b) => a.cost_per_message - b.cost_per_message);
+
+    const div = document.createElement('div');
+    div.className = 'card';
+    div.innerHTML = `
+      <div class="card-header">
+        <div>
+          <div class="card-name"><span class="perf-dot ${perfCls}"></span>${s.salesperson}</div>
+          <div class="card-account">${s.account}</div>
+          <div class="card-perf">${perfLbl}</div>
+        </div>
+        <span class="rank-badge ${rankC[i] || 'rank-x'}">${rankL[i] || '#' + (i+1)}</span>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-header"><span class="stat-label">تكلفة العميل</span>${mkIB(sid+'_cpc')}</div>
+          <div class="hint" id="${sid}_cpc">الصرف الكلي ÷ عدد العملاء — كل عميل كلّف كام</div>
+          <div class="stat-val">${fmt(cpcVal)} ج</div>
+          <div class="stat-change ${clDelta >= 0 ? 'up' : 'down'}">${clDelta >= 0 ? '▲' : '▼'} ${Math.abs(clDelta).toFixed(1)}% العملاء عن الشهر السابق</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-header"><span class="stat-label">الصرف الكلي</span>${mkIB(sid+'_sp')}</div>
+          <div class="hint" id="${sid}_sp">المبلغ المصروف على إعلانات السيلز ده في الشهر</div>
+          <div class="stat-val">${fmt(s.spend)} ج</div>
+          <div class="stat-change ${spDelta >= 0 ? 'up' : 'down'}">${spDelta >= 0 ? '▲' : '▼'} ${Math.abs(spDelta).toFixed(1)}% عن الشهر السابق</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-header"><span class="stat-label">المسدجات</span>${mkIB(sid+'_msg')}</div>
+          <div class="hint" id="${sid}_msg">عدد الرسائل اللي واصلت للسيلز من الإعلانات</div>
+          <div class="stat-val">${fmt(msgs)}</div>
+          <div class="stat-change">تكلفة المسدج: ${fmt(costPerMsg)} ج</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-header"><span class="stat-label">العقود</span>${mkIB(sid+'_cntr')}</div>
+          <div class="hint" id="${sid}_cntr">عدد العملاء اللي فعلاً وقّعوا عقد</div>
+          <div class="stat-val">${s.contracts || s.clients}</div>
+          <div class="stat-change">من إجمالي ${s.clients} عميل</div>
+        </div>
+      </div>
+      <div class="metric-row">
+        <div class="metric-header"><span class="metric-label">معدل التحويل</span>${mkIB(sid+'_conv')}</div>
+        <div class="hint" id="${sid}_conv">السيلز محتاج يكلم كام شخص عشان يطلع بعميل واحد — كل ما قلّ كان أحسن</div>
+        <div class="metric-val">كل <strong>${msgsPerClient}</strong> مسدج → عميل واحد</div>
+      </div>
+      <div class="metric-row">
+        <div class="metric-header"><span class="metric-label">أفضل يوم أداء</span>${mkIB(sid+'_day')}</div>
+        <div class="hint" id="${sid}_day">اليوم اللي فيه أكتر مسدجات في الشهر — بيساعد في تحديد أوقات الإعلانات</div>
+        <div class="metric-muted"><i class="ti ti-clock" aria-hidden="true" style="font-size:11px"></i> هيظهر لما البيانات اليومية توصل</div>
+      </div>
+      <div class="ads-toggle" onclick="toggleExp('${key.replace(/'/g,"\\'")}')">
+        <span><i class="ti ti-photo-film" aria-hidden="true" style="font-size:12px"></i> الإعلانات (${salesAds.length})</span>
+        <i class="ti ${exp ? 'ti-chevron-up' : 'ti-chevron-down'}" aria-hidden="true" style="font-size:12px"></i>
+      </div>
+      ${exp ? salesAds.map(ad => `
+        <div class="ad-mini">
+          ${thumbSm(ad.thumbnail_url, ad.creativeType)}
+          <div class="ad-mini-info">
+            <div class="ad-mini-camp">${ad.campaign}</div>
+            <div class="ad-mini-name">${ad.ad}</div>
+          </div>
+          <div class="ad-mini-spend">${fmt(ad.spend)} ج</div>
+        </div>
+      `).join('') : ''}
+    `;
+    grid.appendChild(div);
+  });
+}
+
+function toggleExp(key) {
+  expandedCards[key] = !expandedCards[key];
+  renderSales(currentMonth);
+}
+
+function renderAds(month) {
+  const allAds = getAdsAggregated(month)
+    .filter(a => ownerOf(a.account) === currentOwner)
+    .sort((a, b) => a.cost_per_message - b.cost_per_message);
+
+  const totalSpend = allAds.reduce((a, d) => a + d.spend, 0);
+  const totalMsg   = allAds.reduce((a, d) => a + d.messages, 0);
+  const totalImpr  = allAds.reduce((a, d) => a + d.impressions, 0);
+
+  document.getElementById('sTotal').textContent   = fmt(totalSpend);
+  document.getElementById('sMsg').textContent     = fmt(totalMsg);
+  document.getElementById('sClients').textContent = fmt(totalMsg > 0 ? totalSpend / totalMsg : 0);
+  document.getElementById('sCPC').textContent     = totalImpr > 0 ? fmtD((totalMsg / totalImpr) * 100, 3) + '%' : '—';
+  document.getElementById('lMsg').textContent     = 'إجمالي المسدجات';
+  document.getElementById('dMsg').textContent     = 'عدد الرسائل الواردة من كل الإعلانات';
+  document.getElementById('lClients').textContent = 'متوسط تكلفة المسدج';
+  document.getElementById('dClients').textContent = 'الصرف ÷ المسدجات — كل رسالة كلّفت كام';
+  document.getElementById('lCPC').textContent     = 'معدل الاستجابة';
+  document.getElementById('dCPC').textContent     = 'نسبة الناس اللي بعتوا رسالة من اللي شافوا الإعلانات';
+  document.getElementById('sMsgSub').textContent  = 'رسالة';
+  document.getElementById('sClientsSub').textContent = 'جنيه / رسالة';
+  document.getElementById('sCPCSub').textContent  = 'إمبريشنز: ' + fmt(totalImpr / 1000) + 'k';
+
+  const rankL = ['الأرخص', 'الثاني', 'الثالث', 'الرابع', 'الخامس', 'السادس', 'السابع', 'الثامن'];
+  const grid = document.getElementById('adsGrid');
+  grid.innerHTML = '';
+
+  if (allAds.length === 0) {
+    grid.innerHTML = '<div class="empty-state"><i class="ti ti-database-off"></i>لا توجد إعلانات للشهر والحساب المحدد</div>';
+    return;
+  }
+
+  allAds.forEach((ad, idx) => {
+    const cpm = ad.impressions > 0 ? fmtD((ad.spend / ad.impressions) * 1000, 1) : '—';
+    const rr  = ad.impressions > 0 ? fmtD((ad.messages / ad.impressions) * 100, 3) : '0';
+    const rrPer1k = ad.impressions > 0 ? Math.round((ad.messages / ad.impressions) * 1000) : 0;
+    const aid = 'ad_' + idx;
+
+    const div = document.createElement('div');
+    div.className = 'ad-card';
+    div.innerHTML = `
+      <div class="ad-card-top">
+        ${thumbLg(ad.thumbnail_url, ad.creativeType)}
+        <div class="ad-card-info">
+          <div class="ad-card-camp">${ad.campaign} · ${ad.account}</div>
+          <div class="ad-card-name">${ad.ad}</div>
+          <div class="ad-tags">
+            <span class="tag ${ad.creativeType === 'فيديو' ? 'tag-video' : 'tag-image'}">
+              <i class="ti ${ad.creativeType === 'فيديو' ? 'ti-video' : 'ti-photo'}" aria-hidden="true"></i>
+              ${ad.creativeType}
+            </span>
+            <span class="tag tag-sales">${ad.salesperson}</span>
+            <span class="tag tag-rank">#${idx + 1} ${rankL[idx] || ''} تكلفة مسدج</span>
+          </div>
+        </div>
+        ${ad.creativeLink
+          ? `<a class="ad-link" href="${ad.creativeLink}" target="_blank" rel="noopener">
+               <i class="ti ti-external-link" aria-hidden="true"></i> الإعلان
+             </a>`
+          : ''}
+      </div>
+      <div class="ad-metrics">
+        <div class="am">
+          <div class="am-top"><span class="am-label">الصرف</span>${mkIB(aid+'_sp')}</div>
+          <div class="am-hint hint" id="${aid}_sp">المبلغ المصروف على الإعلان ده</div>
+          <div class="am-val">${fmt(ad.spend)}</div>
+          <div class="am-sub">جنيه</div>
+        </div>
+        <div class="am">
+          <div class="am-top"><span class="am-label">الإمبريشنز</span>${mkIB(aid+'_impr')}</div>
+          <div class="am-hint hint" id="${aid}_impr">عدد الناس اللي شافوا الإعلان — CPM: تكلفة كل ألف مشاهدة</div>
+          <div class="am-val">${fmt(ad.impressions / 1000)}k</div>
+          <div class="am-sub">CPM: ${cpm} ج</div>
+        </div>
+        <div class="am">
+          <div class="am-top"><span class="am-label">المسدجات</span>${mkIB(aid+'_msg')}</div>
+          <div class="am-hint hint" id="${aid}_msg">عدد الرسائل اللي واصلت من الإعلان ده تحديداً</div>
+          <div class="am-val">${fmt(ad.messages)}</div>
+          <div class="am-sub">رسالة</div>
+        </div>
+        <div class="am">
+          <div class="am-top"><span class="am-label">تكلفة المسدج</span>${mkIB(aid+'_cpm')}</div>
+          <div class="am-hint hint" id="${aid}_cpm">الصرف ÷ المسدجات — كل رسالة من الإعلان ده كلّفت كام</div>
+          <div class="am-val">${fmt(ad.cost_per_message)}</div>
+          <div class="am-sub">جنيه</div>
+        </div>
+      </div>
+      <div class="rr-row">
+        <div class="rr-header">
+          <span class="metric-label">معدل الاستجابة</span>
+          ${mkIB(aid+'_rr')}
+        </div>
+        <div class="rr-hint hint" id="${aid}_rr">من كل 1000 شخص شاف الإعلان، كام واحد بعت رسالة — كل ما زاد كان الإعلان أكفأ</div>
+        <div class="rr-val">${rr}% — من كل 1000 شخص، ${rrPer1k} بعتوا رسالة</div>
+      </div>
+    `;
+    grid.appendChild(div);
+  });
+}
+
+function render() {
+  if (currentTab === 'sales') renderSales(currentMonth);
+  else                        renderAds(currentMonth);
+}
+
+function setTab(el, tab) {
+  document.querySelectorAll('.sub-tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  currentTab = tab;
+  document.getElementById('salesSection').style.display = tab === 'sales' ? '' : 'none';
+  document.getElementById('adsSection').style.display   = tab === 'ads'   ? '' : 'none';
+  render();
+}
+
+function setMonth(m) {
+  currentMonth = m;
+  render();
+}
+
+function setOwner(el, owner) {
+  document.querySelectorAll('.owner-tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  currentOwner = owner;
+  expandedCards = {};
+  render();
+}
+
+async function init() {
+  try {
+    const res = await fetch(DATA_URL + '?t=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    G = await res.json();
+
+    if (!G.salesPerformance && !G.ads) {
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('error-msg').style.display = 'block';
+      document.getElementById('error-msg').textContent = 'البيانات فارغة — في انتظار تشغيل الـ workflow على n8n.';
+      return;
+    }
+
+    const upd = G.lastUpdated ? new Date(G.lastUpdated).toLocaleString('ar-EG') : '—';
+    document.getElementById('lastUpdated').textContent = 'آخر تحديث: ' + upd;
+
+    buildOwnerTabs();
+    buildMonthSelect();
+
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('app').style.display = 'block';
+    render();
+  } catch (e) {
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('error-msg').style.display = 'block';
+  }
+}
+
+init();
+</script>
+</body>
+</html>
