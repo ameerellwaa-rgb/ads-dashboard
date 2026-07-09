@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
@@ -519,6 +519,11 @@ function ownerOf(account) {
   return OWNER_MAP[account] || 'غير محدد';
 }
 
+function getCurrentMonthKey() {
+  if (currentMonth && currentMonth !== 'all') return currentMonth;
+  return (G.detailMonths && G.detailMonths[0]) ? G.detailMonths[0].key : '';
+}
+
 let G = {};
 let currentTab = 'sales';
 let currentMonth = '';
@@ -596,6 +601,10 @@ function buildMonthSelect() {
     opt.textContent = m.label;
     sel.appendChild(opt);
   });
+  const allOpt = document.createElement('option');
+  allOpt.value = 'all';
+  allOpt.textContent = 'كل الشهور';
+  sel.appendChild(allOpt);
   if (months.length) {
     currentMonth = months[0].key;
     sel.value = currentMonth;
@@ -604,7 +613,8 @@ function buildMonthSelect() {
 
 function getAdsAggregated(month) {
   const map = {};
-  (G.ads || []).filter(a => a.month === month).forEach(a => {
+  const adsToProcess = month === 'all' ? (G.ads || []) : (G.ads || []).filter(a => a.month === month);
+  adsToProcess.forEach(a => {
     const key = a.ad_id || (a.campaign + '||' + a.ad);
     if (!map[key]) {
       map[key] = {
@@ -873,7 +883,7 @@ function renderAds(month) {
 }
 
 function render() {
-  if (currentTab === 'sales') renderSales(currentMonth);
+  if (currentTab === 'sales') renderSales(getCurrentMonthKey());
   else                        renderAds(currentMonth);
 }
 
