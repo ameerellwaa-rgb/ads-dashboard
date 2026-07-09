@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-09T13:21:09.543Z",
+  "lastUpdated": "2026-07-09T13:29:38.826Z",
   "trendMonths": [
     {
       "key": "2026-02",
@@ -51,11 +51,11 @@
   "salesPerformance": [
     {
       "salesperson": "اشرف",
-      "spend": 7361.43,
+      "spend": 7361.65,
       "messages": 165,
       "clients": 4,
-      "cost_per_message": 44.61,
-      "cost_per_client": 1840.36,
+      "cost_per_message": 44.62,
+      "cost_per_client": 1840.41,
       "mom": {
         "prevSpend": 24884.19,
         "prevMessages": 408,
@@ -66,7 +66,7 @@
     },
     {
       "salesperson": "ندي",
-      "spend": 3244.97,
+      "spend": 3245.03,
       "messages": 223,
       "clients": 0,
       "cost_per_message": 14.55,
@@ -232,9 +232,9 @@
       "salesperson": "ندي",
       "account": "Ellwaa one",
       "month": "2026-07",
-      "spend": 3244.97,
+      "spend": 3245.03,
       "messages": 223,
-      "impressions": 90816,
+      "impressions": 90819,
       "cost_per_message": 14.55
     },
     {
@@ -250,9 +250,9 @@
       "salesperson": "اشرف",
       "account": "el1",
       "month": "2026-07",
-      "spend": 3118.9,
+      "spend": 3119.12,
       "messages": 98,
-      "impressions": 61766,
+      "impressions": 61767,
       "cost_per_message": 31.83
     },
     {
