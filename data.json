@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-09T12:22:10.382Z",
+  "lastUpdated": "2026-07-09T12:40:25.409Z",
   "trendMonths": [
     {
       "key": "2026-02",
@@ -38,6 +38,10 @@
     {
       "key": "2026-05",
       "label": "مايو 2026"
+    },
+    {
+      "key": "2026-04",
+      "label": "أبريل 2026"
     }
   ],
   "accounts": [
@@ -47,7 +51,7 @@
   "salesPerformance": [
     {
       "salesperson": "اشرف",
-      "spend": 7361.15,
+      "spend": 7361.16,
       "messages": 165,
       "clients": 4,
       "cost_per_message": 44.61,
@@ -62,7 +66,7 @@
     },
     {
       "salesperson": "ندي",
-      "spend": 3244.45,
+      "spend": 3244.55,
       "messages": 223,
       "clients": 0,
       "cost_per_message": 14.55,
@@ -77,7 +81,7 @@
     },
     {
       "salesperson": "ريمون",
-      "spend": 1052.6,
+      "spend": 1052.67,
       "messages": 37,
       "clients": 0,
       "cost_per_message": 28.45,
@@ -92,10 +96,10 @@
     },
     {
       "salesperson": "محمد صبيح",
-      "spend": 502.06,
+      "spend": 502.26,
       "messages": 17,
       "clients": 0,
-      "cost_per_message": 29.53,
+      "cost_per_message": 29.54,
       "cost_per_client": null,
       "mom": {
         "prevSpend": 11884.94,
@@ -115,7 +119,7 @@
       "ad_id": "52517423311336",
       "creativeType": "صورة",
       "creativeLink": "https://www.facebook.com/ads/library/?id=52517423311336",
-      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=O_K-c_b9N2EQ7kNvwHQHbpe&_nc_oc=AdpN9mjIVHR0T2VohrioT7Qq-_nvRz1GNHDf0nwm-5IabC0bS1K1UQlNWPUPQuSGcjw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=HD6BLBhS9TGAjMwLEoVDOA&_nc_tpa=Q5bMBQE8qrN0wh9PqBdWQVB6p5OKgYnoRIYdRxb0J88TfPDwRxGPzY4z61vy0dfI_e9TyME0UvKJqOXeDQ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQC0PKFGO1rpXYHf6O-D8QNyR-3Dd94jdHk5Yj22hT-2Yg&oe=6A558022",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=O_K-c_b9N2EQ7kNvwHQHbpe&_nc_oc=AdpN9mjIVHR0T2VohrioT7Qq-_nvRz1GNHDf0nwm-5IabC0bS1K1UQlNWPUPQuSGcjw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=EfwUaK7OBl1xNKPH0SWeKQ&_nc_tpa=Q5bMBQE1qNouTnc9sQfe2MbsCOTrH2Hb8uwT5y9pxQnT9XlXaI0Vckp_fCPfrko24odOvx6yyNm3-rGLLQ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQD9zGxFiG4-aOep8IV5JdLu1MDb31YlmGmXqe7SSc5xjg&oe=6A558022",
       "salesperson": "اشرف",
       "account": "Ellwaa one",
       "month": "2026-06",
@@ -132,7 +136,7 @@
       "ad_id": "52526166476336",
       "creativeType": "صورة",
       "creativeLink": "https://www.facebook.com/ads/library/?id=52526166476336",
-      "thumbnail_url": "https://scontent-lhr6-1.xx.fbcdn.net/v/t15.5256-10/597442150_1897067401167612_8730106304945309404_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=IkaXZAdjHUIQ7kNvwGn-nXb&_nc_oc=AdpuKrjiQP0RbyoarkF3t-bgZapWi6P_9sUKNyVai0394XJoPTLuTUTdOrwtAu5OKB0&_nc_zt=23&_nc_ht=scontent-lhr6-1.xx&edm=AAwGEdEEAAAA&_nc_gid=ghdePE4YM174Upq8CoSSuQ&_nc_tpa=Q5bMBQHpER-8I5rufabXXxyjkO13gt3KfbXhUCayxMlLPQjZUZJ03frH3m51Jij4Anqn5LUflev-Jet39A&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQA9okr8afsmSoPfhWXhL6as7hVOLmgqBlwvx3gYO6zyHg&oe=6A5573F0",
+      "thumbnail_url": "https://scontent-lhr6-1.xx.fbcdn.net/v/t15.5256-10/597442150_1897067401167612_8730106304945309404_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=IkaXZAdjHUIQ7kNvwGn-nXb&_nc_oc=AdpuKrjiQP0RbyoarkF3t-bgZapWi6P_9sUKNyVai0394XJoPTLuTUTdOrwtAu5OKB0&_nc_zt=23&_nc_ht=scontent-lhr6-1.xx&edm=AAwGEdEEAAAA&_nc_gid=Pg4hJU8WS6wOsdb_1Jp6Eg&_nc_tpa=Q5bMBQFE4OUqFlYsjDSTNtGsCdDWR7YW0FN0ZqbAkEDhgjr_Rx6reL6Ep3ADDbkKVJKVhclpptpKCGZvIQ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQBaTGwgfswcEjBwxH9ORY8GisP0sRihoiHAEsVu0TAKzQ&oe=6A5573F0",
       "salesperson": "محمد صبيح",
       "account": "Ellwaa one",
       "month": "2026-06",
@@ -149,7 +153,7 @@
       "ad_id": "6983471817932",
       "creativeType": "صورة",
       "creativeLink": "https://www.facebook.com/ads/library/?id=6983471817932",
-      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=O_K-c_b9N2EQ7kNvwHQHbpe&_nc_oc=AdpN9mjIVHR0T2VohrioT7Qq-_nvRz1GNHDf0nwm-5IabC0bS1K1UQlNWPUPQuSGcjw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=pDhj_QAwW_AZ_Ms4NzeCJQ&_nc_tpa=Q5bMBQGZMC2WRpGQ7aHn1xRIrXzw28aos15LGJ8kQFgyQH4ZX1nYrhwZhh6tipWphDwxh7kcH2tgDq_tGA&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQCkJasdW62yfzhLGAoJNoYwNOmrHXTATP9-dON7FGVviQ&oe=6A558022",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=O_K-c_b9N2EQ7kNvwHQHbpe&_nc_oc=AdpN9mjIVHR0T2VohrioT7Qq-_nvRz1GNHDf0nwm-5IabC0bS1K1UQlNWPUPQuSGcjw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=B0qLWf9XC8CiZuL4qUz0hA&_nc_tpa=Q5bMBQHfYm04pPZBw0Jpo2kYDJqeQ7gMOuy2PNofbkd5BU7rIO_hIT64Y4UVtkqFivCdq9HFeGIICzDnyw&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQBKBSaSUyklXg4ivV65t3gFHYxhlucbQNR05t195FBV5Q&oe=6A558022",
       "salesperson": "ندي",
       "account": "Ellwaa one",
       "month": "2026-06",
@@ -166,7 +170,7 @@
       "ad_id": "120247192866470756",
       "creativeType": "صورة",
       "creativeLink": "https://www.facebook.com/ads/library/?id=120247192866470756",
-      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=O_K-c_b9N2EQ7kNvwHQHbpe&_nc_oc=AdpN9mjIVHR0T2VohrioT7Qq-_nvRz1GNHDf0nwm-5IabC0bS1K1UQlNWPUPQuSGcjw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=bSj05QUfXpc4ud2ITLaiKg&_nc_tpa=Q5bMBQG1dJWSuKBi1qOu5Vy2MOEmbBVj25VhK5D7bBcj3mPIQd1lBb9gBafEybPdJ1nmAuc1emSfFfMAlA&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQBk9dEX2aGFDjPt4REvFM9FhxCW1P-TOMWB8HM8I3xixw&oe=6A558022",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=O_K-c_b9N2EQ7kNvwHQHbpe&_nc_oc=AdpN9mjIVHR0T2VohrioT7Qq-_nvRz1GNHDf0nwm-5IabC0bS1K1UQlNWPUPQuSGcjw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=kXIwmcUjjv9y8V9BKea1xQ&_nc_tpa=Q5bMBQF7uDIlvjevmwRgp2_l9ZgyiicOC97UF0BgCay-mAQIAO4XxHMugLqYc4Htl_QyaQzoevg9uvsVLA&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQASlkffBsfHYpglkWgT_44IfrfIxjKfzbp3FoJAidTBBg&oe=6A558022",
       "salesperson": "اشرف",
       "account": "el1",
       "month": "2026-06",
@@ -183,7 +187,7 @@
       "ad_id": "52517423311336",
       "creativeType": "صورة",
       "creativeLink": "https://www.facebook.com/ads/library/?id=52517423311336",
-      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=O_K-c_b9N2EQ7kNvwHQHbpe&_nc_oc=AdpN9mjIVHR0T2VohrioT7Qq-_nvRz1GNHDf0nwm-5IabC0bS1K1UQlNWPUPQuSGcjw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=fKihv89n3xoIUREIvgd92A&_nc_tpa=Q5bMBQGqsVJ8jbpHEYtctZZ12iXs09DK2yJCBoPQuN1FJAjHFVL-3L-f3bLCFVXQJXL_ozW3_DZ1uvZDXg&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQC4FiaH89jhUwRLFzjdjnTivD-HoxKD6zgTvqs31YTkjQ&oe=6A558022",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=O_K-c_b9N2EQ7kNvwHQHbpe&_nc_oc=AdpN9mjIVHR0T2VohrioT7Qq-_nvRz1GNHDf0nwm-5IabC0bS1K1UQlNWPUPQuSGcjw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=XBEaZrIXQdrDc0AAQerg7g&_nc_tpa=Q5bMBQEW9tejuZcoeXBKMFyLTXkwA1BYLPSLUPTkpi1B2bkYnSP2XxoDk-87NxCARnOSRNKNccnyZO6lcw&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQDNow5NGIx7B0Em5cjCKJWOo0n8uapLdZ1E67eVtIjmUA&oe=6A558022",
       "salesperson": "اشرف",
       "account": "Ellwaa one",
       "month": "2026-07",
@@ -200,13 +204,30 @@
       "ad_id": "6983471817932",
       "creativeType": "صورة",
       "creativeLink": "https://www.facebook.com/ads/library/?id=6983471817932",
-      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=O_K-c_b9N2EQ7kNvwHQHbpe&_nc_oc=AdpN9mjIVHR0T2VohrioT7Qq-_nvRz1GNHDf0nwm-5IabC0bS1K1UQlNWPUPQuSGcjw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=A_1kDyl4M43qiTYORnJXLw&_nc_tpa=Q5bMBQHy9H80rUJdaj7RI3mFjUMiNVAkkKYPiWqkmgHKpLRLarNP81SzIyDxDdsOAWkgtYjlQ4wkYcMQIg&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQAF6cXFWOElA846J4n3WgzOACKNbs98xmVOhXRGGyAgNg&oe=6A558022",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=O_K-c_b9N2EQ7kNvwHQHbpe&_nc_oc=AdpN9mjIVHR0T2VohrioT7Qq-_nvRz1GNHDf0nwm-5IabC0bS1K1UQlNWPUPQuSGcjw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=hgdITtb9S9Ct9DcvEgMgbQ&_nc_tpa=Q5bMBQFKFU9wPKAcpvt8LkpXeMMv_37eG7oTKU9gvN2yAqPWfi4iwQiQ8W6SjKJZbgan9kK058O30JFkhQ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQDi9FKNiWXrbL1OEYDEzXiNh5T812vGcJu26KTS5D7DXw&oe=6A558022",
+      "salesperson": "ندي",
+      "account": "Ellwaa one",
+      "month": "2026-04",
+      "spend": 3517.37,
+      "messages": 129,
+      "impressions": 56012,
+      "cost_per_message": 27.27
+    },
+    {
+      "account_id": "775931245471232",
+      "campaign_id": "6983471818332",
+      "campaign": "حملة إعلانية جديدة بهدف التفاعل",
+      "ad": "ندي",
+      "ad_id": "6983471817932",
+      "creativeType": "صورة",
+      "creativeLink": "https://www.facebook.com/ads/library/?id=6983471817932",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=O_K-c_b9N2EQ7kNvwHQHbpe&_nc_oc=AdpN9mjIVHR0T2VohrioT7Qq-_nvRz1GNHDf0nwm-5IabC0bS1K1UQlNWPUPQuSGcjw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=-mGXXf0_dt7zDe9dgVR-Ew&_nc_tpa=Q5bMBQF3ofP4qFAfJPvytBQRSN_HHn-_6tk0B_tU5JhNVs0yVI6Y6tnJcvuaCrGQIgoah8PpJkZ_FKHQdA&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQCCLkhUZfNchLAaHmnk_lNZaqkiXwqovMwNRx13ZjtRcQ&oe=6A558022",
       "salesperson": "ندي",
       "account": "Ellwaa one",
       "month": "2026-07",
-      "spend": 3244.45,
+      "spend": 3244.55,
       "messages": 223,
-      "impressions": 90791,
+      "impressions": 90795,
       "cost_per_message": 14.55
     },
     {
@@ -217,13 +238,13 @@
       "ad_id": "120247192866470756",
       "creativeType": "صورة",
       "creativeLink": "https://www.facebook.com/ads/library/?id=120247192866470756",
-      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=O_K-c_b9N2EQ7kNvwHQHbpe&_nc_oc=AdpN9mjIVHR0T2VohrioT7Qq-_nvRz1GNHDf0nwm-5IabC0bS1K1UQlNWPUPQuSGcjw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=je891fPpCxbWhmY7IvBxNg&_nc_tpa=Q5bMBQHg1vMwtzT8vYIQiOPaNebSqX5zC757O-aGvs5BOYahTC7jATNAL6S3Xlim70koQlciJdMq-7L6Tg&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQDkzcz7FDg8aqZTpYtYIPwE7JgYoRd4kQ23f3RdGzT_5w&oe=6A558022",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=O_K-c_b9N2EQ7kNvwHQHbpe&_nc_oc=AdpN9mjIVHR0T2VohrioT7Qq-_nvRz1GNHDf0nwm-5IabC0bS1K1UQlNWPUPQuSGcjw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=giuMR_vFdSeupampHyWF4Q&_nc_tpa=Q5bMBQEaqJAX0kOgienVEKYDdAdGd4NxODq7tza9cXz4TAWkbAh8UT7vlrNEblcpKngJSW_Siq-UkXLCBg&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQBFfYiOr7rjbcH100xSaYP-QVNOCrYg0dgsJcINurkvOg&oe=6A558022",
       "salesperson": "اشرف",
       "account": "el1",
       "month": "2026-07",
-      "spend": 3118.62,
+      "spend": 3118.63,
       "messages": 98,
-      "impressions": 61761,
+      "impressions": 61762,
       "cost_per_message": 31.82
     },
     {
@@ -234,13 +255,13 @@
       "ad_id": "52555227562336",
       "creativeType": "صورة",
       "creativeLink": "https://www.facebook.com/ads/library/?id=52555227562336",
-      "thumbnail_url": "https://scontent-lhr6-1.xx.fbcdn.net/v/t15.5256-10/597442150_1897067401167612_8730106304945309404_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=IkaXZAdjHUIQ7kNvwGn-nXb&_nc_oc=AdpuKrjiQP0RbyoarkF3t-bgZapWi6P_9sUKNyVai0394XJoPTLuTUTdOrwtAu5OKB0&_nc_zt=23&_nc_ht=scontent-lhr6-1.xx&edm=AAwGEdEEAAAA&_nc_gid=k6FsJhopP8l9TEXheXgJxg&_nc_tpa=Q5bMBQG4TUhF_coV-V8GFSJPO3O4X_fhNAKA8OfP9X-6oJFFmqSxn1V6JiJAnWBIXBPWrbiuhSDf2IyDHg&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQAoEZsrVZqQrEhl419ttuj4uWGL10to9OLbpOj5750lHg&oe=6A5573F0",
+      "thumbnail_url": "https://scontent-lhr6-1.xx.fbcdn.net/v/t15.5256-10/597442150_1897067401167612_8730106304945309404_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=IkaXZAdjHUIQ7kNvwGn-nXb&_nc_oc=AdpuKrjiQP0RbyoarkF3t-bgZapWi6P_9sUKNyVai0394XJoPTLuTUTdOrwtAu5OKB0&_nc_zt=23&_nc_ht=scontent-lhr6-1.xx&edm=AAwGEdEEAAAA&_nc_gid=jXnu-LUe-IekmTkwrcJeDg&_nc_tpa=Q5bMBQH2jVSRM1x5v8e2DtJFq7RwJpkgt-UP3O87Q5NUTzYjnmeZCgMbdXdQ-AjVpKPrnOh8Ux4yectgeQ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQCeOBjQiCL-1LziTB9L9X_LHxgAD3-YltCBUHd99nd0hw&oe=6A5573F0",
       "salesperson": "ريمون",
       "account": "Ellwaa one",
       "month": "2026-07",
-      "spend": 1052.6,
+      "spend": 1052.67,
       "messages": 37,
-      "impressions": 27272,
+      "impressions": 27273,
       "cost_per_message": 28.45
     },
     {
@@ -251,7 +272,7 @@
       "ad_id": "6983471817932",
       "creativeType": "صورة",
       "creativeLink": "https://www.facebook.com/ads/library/?id=6983471817932",
-      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=O_K-c_b9N2EQ7kNvwHQHbpe&_nc_oc=AdpN9mjIVHR0T2VohrioT7Qq-_nvRz1GNHDf0nwm-5IabC0bS1K1UQlNWPUPQuSGcjw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=FzmH9KfZg5xbJ_sygghgiQ&_nc_tpa=Q5bMBQF4RbUEtt6fEo2DxKf2Bvso_PrSHf7MFeGJQg1Ev9sn9l7OnNJPEr9Gq_ldnrf0M7Mo5aporIcNzg&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQCASqbbp0u_Se_DRk-UsBlnQngdsuFzE1dxo_esbzgziQ&oe=6A558022",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=O_K-c_b9N2EQ7kNvwHQHbpe&_nc_oc=AdpN9mjIVHR0T2VohrioT7Qq-_nvRz1GNHDf0nwm-5IabC0bS1K1UQlNWPUPQuSGcjw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=t1nuPFiagBya75O_g6uG1Q&_nc_tpa=Q5bMBQEC813MVSLzrxjL3buIZqPMdMANfvHxWkqoZWswsb3MjcaAHugFcSLSB_5dAhAgiEMRKoCzPxYX8A&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQAQiRWhESclf9xAQlCXi1PsSwY8l0C6eCgMwo51mGbE4Q&oe=6A558022",
       "salesperson": "ندي",
       "account": "Ellwaa one",
       "month": "2026-05",
@@ -268,7 +289,7 @@
       "ad_id": "120248745848260756",
       "creativeType": "صورة",
       "creativeLink": "https://www.facebook.com/ads/library/?id=120248745848260756",
-      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/721297292_1743549583752545_6544117414473322281_n.jpg?_nc_cat=100&ccb=1-7&_nc_ohc=kXec7YWpZwUQ7kNvwH7qsY7&_nc_oc=Ado4up3uoZsAOLHkQdii-HAuU9ldiRs7OO1YzM0xZ71CQRX9_-BT_BcY-rl8mWGw5K4&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=imhonXgtUEsAvhqMhUlJ5Q&_nc_tpa=Q5bMBQH-THcp5Ny92PrP3V_uRW-RDimgL0Hjczl9YTnYfA3gbUOP5a5B6SUWsocvEOI5dm-7Aihz2Tebmg&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQAshS_i9Gzq_Ek4Lm5UOgJgLmo4Fgj6z9KloX1wm7-bMQ&oe=6A556974",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/721297292_1743549583752545_6544117414473322281_n.jpg?_nc_cat=100&ccb=1-7&_nc_ohc=kXec7YWpZwUQ7kNvwH7qsY7&_nc_oc=Ado4up3uoZsAOLHkQdii-HAuU9ldiRs7OO1YzM0xZ71CQRX9_-BT_BcY-rl8mWGw5K4&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=hZlC7IZPumpZPJsmiH6yVg&_nc_tpa=Q5bMBQHzpk_7DW2l_l67vRZgi5kJyfdF3RmEgBaxMA1fzG3QuPqTiePS3Q33qFwswZzNEUf6flSIUNbbyA&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQC-bzLX7hVLZhGxT-cB40KkFU2N4jYXrzc9dwfFRXC7Nw&oe=6A556974",
       "salesperson": "غير محدد",
       "account": "el1",
       "month": "2026-07",
@@ -285,14 +306,31 @@
       "ad_id": "120248746586510756",
       "creativeType": "صورة",
       "creativeLink": "https://www.facebook.com/ads/library/?id=120248746586510756",
-      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/582132264_1177376630425872_5366191039321272413_n.jpg?_nc_cat=111&ccb=1-7&_nc_ohc=6yGAPOkcXOYQ7kNvwHKVSiB&_nc_oc=AdpViAR2IRt_re2DoDMHt-6EGp6XXMUGVSVgqFg1krIeSlh4bXNqwKtBWZzd-Cg3nPQ&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=SZ3YFpzYSzYu5jVyNeql9g&_nc_tpa=Q5bMBQGvHUjrTxG5hJv56THmoSh24Du6QF2w6Smpb25aGP-4V5qXk8Vdq0jLML3dCwVlDRrL3TDjXjFcSA&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQDxzw46fBTzbo2XryZmHRhM21m8oLjdcDxv_CSaBOi6ug&oe=6A556F3C",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/582132264_1177376630425872_5366191039321272413_n.jpg?_nc_cat=111&ccb=1-7&_nc_ohc=6yGAPOkcXOYQ7kNvwHKVSiB&_nc_oc=AdpViAR2IRt_re2DoDMHt-6EGp6XXMUGVSVgqFg1krIeSlh4bXNqwKtBWZzd-Cg3nPQ&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=V_uNQ2Youy90hAhlYGB1zg&_nc_tpa=Q5bMBQERUCt5oPLyS8V2aU_xjaO3wsRsotRuYHxFmJ3fpi0-d2XMFinaz_z8xAcYNn9ASJL1UyblpSX0Jw&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQDXK2tUUZvbJ1hpOzxMZ85DKjFdN7ergUf3Z8hwfpxUMw&oe=6A556F3C",
       "salesperson": "محمد صبيح",
       "account": "el1",
       "month": "2026-07",
-      "spend": 502.06,
+      "spend": 502.26,
       "messages": 17,
-      "impressions": 9629,
-      "cost_per_message": 29.53
+      "impressions": 9632,
+      "cost_per_message": 29.54
+    },
+    {
+      "account_id": "775931245471232",
+      "campaign_id": "6992428456332",
+      "campaign": "حملة إعلانية جديدة بهدف التفاعل",
+      "ad": "إعلان جديد بهدف التفاعل",
+      "ad_id": "6992428456132",
+      "creativeType": "صورة",
+      "creativeLink": "https://www.facebook.com/ads/library/?id=6992428456132",
+      "thumbnail_url": "https://scontent-lhr8-2.xx.fbcdn.net/v/t39.30808-6/632001227_1195737159310293_2356245407488298878_n.jpg?_nc_cat=109&ccb=1-7&_nc_ohc=_lOG6diyGFgQ7kNvwELOLaM&_nc_oc=Adqz147WrNkNzRD8maxmiJAyGVih5PAreuNd_BPOz7-t6HdtXTRIE5a7XxEPGkwu5Y0&_nc_zt=23&_nc_ht=scontent-lhr8-2.xx&edm=AAwGEdEEAAAA&_nc_gid=oS2l91NsepLqKqaaEbCELg&_nc_tpa=Q5bMBQFZxx_tSEersmz6eN2JRB3Z3K8qcPI3THTPYVga_iT2Q8JHuQ5r9wKuMJirEfGNMOpNsZ8XWTzbKA&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=89be11&_nc_sid=58080a&oh=00_AQBW5xld-zifUqE3J4CdBvM0ikuFj3vKo_jENmH07h2FEA&oe=6A556604",
+      "salesperson": "غير محدد",
+      "account": "Ellwaa one",
+      "month": "2026-05",
+      "spend": 103.98,
+      "messages": 1,
+      "impressions": 2639,
+      "cost_per_message": 103.98
     },
     {
       "account_id": "775931245471232",
@@ -302,7 +340,7 @@
       "ad_id": "52526166476336",
       "creativeType": "صورة",
       "creativeLink": "https://www.facebook.com/ads/library/?id=52526166476336",
-      "thumbnail_url": "https://scontent-lhr6-1.xx.fbcdn.net/v/t15.5256-10/597442150_1897067401167612_8730106304945309404_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=IkaXZAdjHUIQ7kNvwGn-nXb&_nc_oc=AdpuKrjiQP0RbyoarkF3t-bgZapWi6P_9sUKNyVai0394XJoPTLuTUTdOrwtAu5OKB0&_nc_zt=23&_nc_ht=scontent-lhr6-1.xx&edm=AAwGEdEEAAAA&_nc_gid=asn4v3SlpnUrjRBEXLLzbQ&_nc_tpa=Q5bMBQFT6-q3xHDwcraXxKN49iEMTptVLsl-gjdCJhWtp9vK6wMks7MIVOXAwabQqoPNF0AFARdw5MzgYg&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQAMDGrm5lia26O6MeLvfU7zUPVRFedLXaPjYM5O8ZiYaQ&oe=6A5573F0",
+      "thumbnail_url": "https://scontent-lhr6-1.xx.fbcdn.net/v/t15.5256-10/597442150_1897067401167612_8730106304945309404_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=IkaXZAdjHUIQ7kNvwGn-nXb&_nc_oc=AdpuKrjiQP0RbyoarkF3t-bgZapWi6P_9sUKNyVai0394XJoPTLuTUTdOrwtAu5OKB0&_nc_zt=23&_nc_ht=scontent-lhr6-1.xx&edm=AAwGEdEEAAAA&_nc_gid=tOLrmdljgYwPNo9YyehJ2Q&_nc_tpa=Q5bMBQEs7Cbht-nl59t1cCNmZo6bPqzefJWGqfRFATT2oJ-So6Y31mpTw2MOuCvVH5qtx29UO3xbVpTz3Q&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQDRV64SDGaB31Hxc2oG8uXvJSjkecUi5GVcfNfRqPRe8g&oe=6A5573F0",
       "salesperson": "محمد صبيح",
       "account": "Ellwaa one",
       "month": "2026-07",
