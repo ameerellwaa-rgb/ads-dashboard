@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
@@ -9,29 +9,29 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg: #f4f4f2;
-      --surface: #ffffff;
-      --surface2: #f9f9f8;
-      --border: rgba(0,0,0,0.08);
-      --border-strong: rgba(0,0,0,0.14);
-      --text: #1a1a18;
-      --text-sec: #5a5a56;
-      --text-muted: #9a9a94;
-      --accent: #2563eb;
-      --accent-bg: #eff6ff;
-      --accent-text: #1d4ed8;
-      --success: #16a34a;
-      --success-bg: #f0fdf4;
-      --success-text: #15803d;
-      --warning: #d97706;
-      --warning-bg: #fffbeb;
-      --warning-text: #b45309;
-      --danger: #dc2626;
-      --danger-bg: #fef2f2;
-      --danger-text: #b91c1c;
-      --pro: #7c3aed;
-      --pro-bg: #f5f3ff;
-      --pro-text: #6d28d9;
+      --bg: #0d1117;
+      --surface: #161b27;
+      --surface2: #1c2333;
+      --border: rgba(255,255,255,0.07);
+      --border-strong: rgba(255,255,255,0.13);
+      --text: #e6edf3;
+      --text-sec: #8b949e;
+      --text-muted: #6e7681;
+      --accent: #58a6ff;
+      --accent-bg: #0c1929;
+      --accent-text: #79c0ff;
+      --success: #3fb950;
+      --success-bg: #0d2818;
+      --success-text: #56d364;
+      --warning: #d29922;
+      --warning-bg: #2a1f00;
+      --warning-text: #e3b341;
+      --danger: #f85149;
+      --danger-bg: #2d0f0e;
+      --danger-text: #ff7b72;
+      --pro: #bc8cff;
+      --pro-bg: #1a0a2e;
+      --pro-text: #d2a8ff;
       --radius: 8px;
     }
 
@@ -569,8 +569,7 @@ function thumbLg(url, type) {
 function buildOwnerTabs() {
   const owners = [...new Set(Object.values(OWNER_MAP))];
   const allOwners = [...new Set(
-    (G.salesPerformance || []).map(s => ownerOf(s.account))
-      .concat((G.ads || []).map(a => ownerOf(a.account)))
+    (G.ads || []).map(a => ownerOf(a.account))
   )].filter(Boolean);
   const finalOwners = owners.filter(o => allOwners.includes(o));
   if (finalOwners.length === 0) finalOwners.push('أستاذ إيهاب');
@@ -632,11 +631,11 @@ function getAdsAggregated(month) {
 }
 
 function getSalesData(month) {
-  return (G.salesPerformance || []).filter(s => s.month === month);
+  return (G.salesPerformance || []);
 }
 
 function renderSales(month) {
-  const items = getSalesData(month).filter(s => ownerOf(s.account) === currentOwner);
+  const items = getSalesData(month);
   const allAds = getAdsAggregated(month).filter(a => ownerOf(a.account) === currentOwner);
 
   const msgBySales = {};
@@ -708,7 +707,7 @@ function renderSales(month) {
       <div class="card-header">
         <div>
           <div class="card-name"><span class="perf-dot ${perfCls}"></span>${s.salesperson}</div>
-          <div class="card-account">${s.account}</div>
+          <div class="card-account">${s.account || ''}</div>
           <div class="card-perf">${perfLbl}</div>
         </div>
         <span class="rank-badge ${rankC[i] || 'rank-x'}">${rankL[i] || '#' + (i+1)}</span>
