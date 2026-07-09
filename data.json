@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-09T11:43:39.935Z",
+  "lastUpdated": "2026-07-09T11:57:54.284Z",
   "trendMonths": [
     {
       "key": "2026-02",
@@ -28,14 +28,8 @@
   ],
   "detailMonths": [
     {
-      "key": "2026-06",
-      "label": "يونيو 2026",
-      "days": 30
-    },
-    {
       "key": "2026-07",
-      "label": "يوليو 2026",
-      "days": 31
+      "label": "يوليو 2026"
     }
   ],
   "accounts": [
@@ -45,11 +39,11 @@
   "salesPerformance": [
     {
       "salesperson": "اشرف",
-      "spend": 7360.8,
+      "spend": 7361.07,
       "messages": 165,
-      "clients": 31,
+      "clients": 4,
       "cost_per_message": 44.61,
-      "cost_per_client": 237.45,
+      "cost_per_client": 1840.27,
       "mom": {
         "prevSpend": 0,
         "prevMessages": 0,
@@ -60,11 +54,11 @@
     },
     {
       "salesperson": "ندي",
-      "spend": 3244.06,
+      "spend": 3244.34,
       "messages": 223,
-      "clients": 11,
+      "clients": 0,
       "cost_per_message": 14.55,
-      "cost_per_client": 294.91,
+      "cost_per_client": null,
       "mom": {
         "prevSpend": 0,
         "prevMessages": 0,
@@ -75,11 +69,26 @@
     },
     {
       "salesperson": "ريمون",
-      "spend": 1052.47,
+      "spend": 1052.57,
       "messages": 37,
-      "clients": 33,
+      "clients": 0,
       "cost_per_message": 28.45,
-      "cost_per_client": 31.89,
+      "cost_per_client": null,
+      "mom": {
+        "prevSpend": 0,
+        "prevMessages": 0,
+        "prevClients": 0,
+        "spendDelta": null,
+        "clientsDelta": null
+      }
+    },
+    {
+      "salesperson": "محمد صبيح",
+      "spend": 502,
+      "messages": 17,
+      "clients": 0,
+      "cost_per_message": 29.53,
+      "cost_per_client": null,
       "mom": {
         "prevSpend": 0,
         "prevMessages": 0,
@@ -98,13 +107,13 @@
       "ad_id": "52517423311336",
       "creativeType": "صورة",
       "creativeLink": "https://www.facebook.com/ads/library/?id=52517423311336",
-      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=O_K-c_b9N2EQ7kNvwHQHbpe&_nc_oc=AdpN9mjIVHR0T2VohrioT7Qq-_nvRz1GNHDf0nwm-5IabC0bS1K1UQlNWPUPQuSGcjw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=gQw0dTUiDOVapX7TXwkbQQ&_nc_tpa=Q5bMBQFmpMiJ_pIpL1kaZB29peq8iI1Gqg98BryXnsebhlfn4-JOTGxgr47hP3iL-PGViS1kpVkYJ270QA&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQDK8QGftG6K4swYck-KinH9AKejTs-iHoQniT-j2wov_A&oe=6A5547E2",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=O_K-c_b9N2EQ7kNvwHQHbpe&_nc_oc=AdpN9mjIVHR0T2VohrioT7Qq-_nvRz1GNHDf0nwm-5IabC0bS1K1UQlNWPUPQuSGcjw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=DRccwSskRPHiOlb-b8acaQ&_nc_tpa=Q5bMBQFgZJuUD-fwWMGpC1gq3qr2ca23GwPmEkl_Uauy7VyWAs-dTeEsj9r9fPURVXvAXxKPWIJsBVeSfw&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQD3g06leJYMFJcm9Kcipt_vnJRr0X_FMM-u2e9KQNnhPw&oe=6A5547E2",
       "salesperson": "اشرف",
       "account": "Ellwaa one",
       "month": "2026-07",
-      "spend": 4242.39,
+      "spend": 4242.46,
       "messages": 67,
-      "impressions": 103854,
+      "impressions": 103855,
       "cost_per_message": 63.32
     },
     {
@@ -115,13 +124,13 @@
       "ad_id": "6983471817932",
       "creativeType": "صورة",
       "creativeLink": "https://www.facebook.com/ads/library/?id=6983471817932",
-      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=O_K-c_b9N2EQ7kNvwHQHbpe&_nc_oc=AdpN9mjIVHR0T2VohrioT7Qq-_nvRz1GNHDf0nwm-5IabC0bS1K1UQlNWPUPQuSGcjw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=pzUkky_nfYuF91l0tSekFQ&_nc_tpa=Q5bMBQFaCLdIIMN5vky6T0MPDLOYMB46Dt_wpd72Lxu6aSmCr-qMMQlBlQSZPjtWj-tZ5zS4BRdrnnu7yQ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQD5m0ar6NMnjj6Z-3qcSHzZ0JGOItWhN3L3y-3l3_5WlQ&oe=6A5547E2",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=O_K-c_b9N2EQ7kNvwHQHbpe&_nc_oc=AdpN9mjIVHR0T2VohrioT7Qq-_nvRz1GNHDf0nwm-5IabC0bS1K1UQlNWPUPQuSGcjw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=vh7dkBmLZjhe0Yesg3z6ug&_nc_tpa=Q5bMBQE7zw2M3gtrjlptXF211aELhVgra9HmyAJXkr1tfiBbJuc0ydZb5OlGEWagAaxGpnu6taQIxT4KUg&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQBuArl8QK5J_8bL9b0Y9TlPgZvGiWPUDk7i_c7bAxJVwQ&oe=6A5547E2",
       "salesperson": "ندي",
       "account": "Ellwaa one",
       "month": "2026-07",
-      "spend": 3244.06,
+      "spend": 3244.34,
       "messages": 223,
-      "impressions": 90773,
+      "impressions": 90782,
       "cost_per_message": 14.55
     },
     {
@@ -132,13 +141,13 @@
       "ad_id": "120247192866470756",
       "creativeType": "صورة",
       "creativeLink": "https://www.facebook.com/ads/library/?id=120247192866470756",
-      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=O_K-c_b9N2EQ7kNvwHQHbpe&_nc_oc=AdpN9mjIVHR0T2VohrioT7Qq-_nvRz1GNHDf0nwm-5IabC0bS1K1UQlNWPUPQuSGcjw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=xCJtGasx3QXKsEQzMr_w3w&_nc_tpa=Q5bMBQGRw_f9nDFt4NISrtTo6nzbX3-LUXlmiQVnyS6WxI0z_SLTuP0Ql__Xew4zowYnsnkzuY7PtaX1Vg&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQCgw2nbOw9Y18I8TJ90TBkGj-xnv7HYd2BDFZ40Y9Mx3w&oe=6A5547E2",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=O_K-c_b9N2EQ7kNvwHQHbpe&_nc_oc=AdpN9mjIVHR0T2VohrioT7Qq-_nvRz1GNHDf0nwm-5IabC0bS1K1UQlNWPUPQuSGcjw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=NvkalJgdcQOzKs77zY6a2g&_nc_tpa=Q5bMBQF2_iKh-oaG-XHKw9YeA5kWoek09eGoj8QclHJW6l3d_7u10AZyESQvMHvRiyCMtrdw0uxYMUE5Zw&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQDah4rVRPmgInGBJQyBVea0o8Kp1M5q7fMGNkr58uKbWg&oe=6A5547E2",
       "salesperson": "اشرف",
       "account": "el1",
       "month": "2026-07",
-      "spend": 3118.41,
+      "spend": 3118.61,
       "messages": 98,
-      "impressions": 61757,
+      "impressions": 61760,
       "cost_per_message": 31.82
     },
     {
@@ -149,13 +158,13 @@
       "ad_id": "52555227562336",
       "creativeType": "صورة",
       "creativeLink": "https://www.facebook.com/ads/library/?id=52555227562336",
-      "thumbnail_url": "https://scontent-lhr6-1.xx.fbcdn.net/v/t15.5256-10/597442150_1897067401167612_8730106304945309404_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=IkaXZAdjHUIQ7kNvwGn-nXb&_nc_oc=AdpuKrjiQP0RbyoarkF3t-bgZapWi6P_9sUKNyVai0394XJoPTLuTUTdOrwtAu5OKB0&_nc_zt=23&_nc_ht=scontent-lhr6-1.xx&edm=AAwGEdEEAAAA&_nc_gid=nIxUH-YMBQe1LTYfMHtrqg&_nc_tpa=Q5bMBQEqyd6KwEgMYlcD89qxtSfpIJzeu2gM4deThDg63d0S4q8NMKQlloUQGa5O633JMorkuffAR0GfIQ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQCLCpqaZjy3N5ohzMsvTUFhR5-w4h3eVWkiQLNTueTTGg&oe=6A5573F0",
+      "thumbnail_url": "https://scontent-lhr6-1.xx.fbcdn.net/v/t15.5256-10/597442150_1897067401167612_8730106304945309404_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=IkaXZAdjHUIQ7kNvwGn-nXb&_nc_oc=AdpuKrjiQP0RbyoarkF3t-bgZapWi6P_9sUKNyVai0394XJoPTLuTUTdOrwtAu5OKB0&_nc_zt=23&_nc_ht=scontent-lhr6-1.xx&edm=AAwGEdEEAAAA&_nc_gid=Jrl96DTs0U6EPKtxfMyXkA&_nc_tpa=Q5bMBQEOKyonkMxU_AfAo4lfSap0FhICWwuFHe6CsET864rZdYrjLfCBbiZl-sD1UamLFssl1O6C__pVRg&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQDUbxDkPE4Z3s9kZ_QpnUTfAdwQ6kQzTEYz7rBE7P-s9A&oe=6A5573F0",
       "salesperson": "ريمون",
       "account": "Ellwaa one",
       "month": "2026-07",
-      "spend": 1052.47,
+      "spend": 1052.57,
       "messages": 37,
-      "impressions": 27269,
+      "impressions": 27271,
       "cost_per_message": 28.45
     },
     {
@@ -166,14 +175,14 @@
       "ad_id": "120248745848260756",
       "creativeType": "صورة",
       "creativeLink": "https://www.facebook.com/ads/library/?id=120248745848260756",
-      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/721297292_1743549583752545_6544117414473322281_n.jpg?_nc_cat=100&ccb=1-7&_nc_ohc=kXec7YWpZwUQ7kNvwH7qsY7&_nc_oc=Ado4up3uoZsAOLHkQdii-HAuU9ldiRs7OO1YzM0xZ71CQRX9_-BT_BcY-rl8mWGw5K4&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=a0vU2vGzv7cXMqiWAxeOBg&_nc_tpa=Q5bMBQEURC70qAke6_1eb3Ooeeb1M2gUSG4_s_M6Oc_elKb5U3I6K_1q85PM57yduuIAe4HesOlLGu5Sew&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQDJQt9hhHUxrNhxOYlwBuQw_6GQV3rBmh_7gk2WXSGe9w&oe=6A556974",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/721297292_1743549583752545_6544117414473322281_n.jpg?_nc_cat=100&ccb=1-7&_nc_ohc=kXec7YWpZwUQ7kNvwH7qsY7&_nc_oc=Ado4up3uoZsAOLHkQdii-HAuU9ldiRs7OO1YzM0xZ71CQRX9_-BT_BcY-rl8mWGw5K4&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=H2jIOGMHNfE1WBOJQRlSbw&_nc_tpa=Q5bMBQH8N7SJCSauIwgDHovOzRup6YdJEgfac8X41aKsXgY6I8MUYMjt7rPr7n7I8zQQRb_LuJAI6vTfEA&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQCxXm1PimnXq6Hux06CsDUr9rRx--duQmFFHY93WgGaYA&oe=6A556974",
       "salesperson": "غير محدد",
       "account": "el1",
       "month": "2026-07",
-      "spend": 800.47,
+      "spend": 800.58,
       "messages": 18,
-      "impressions": 24166,
-      "cost_per_message": 44.47
+      "impressions": 24168,
+      "cost_per_message": 44.48
     },
     {
       "account_id": "961170320177419",
@@ -183,8 +192,8 @@
       "ad_id": "120248746586510756",
       "creativeType": "صورة",
       "creativeLink": "https://www.facebook.com/ads/library/?id=120248746586510756",
-      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/582132264_1177376630425872_5366191039321272413_n.jpg?_nc_cat=111&ccb=1-7&_nc_ohc=6yGAPOkcXOYQ7kNvwHKVSiB&_nc_oc=AdpViAR2IRt_re2DoDMHt-6EGp6XXMUGVSVgqFg1krIeSlh4bXNqwKtBWZzd-Cg3nPQ&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=xAvsgWjQEjq2Ftbq3_aB0w&_nc_tpa=Q5bMBQGmyJGgJqbGPD_lx13Nh_eruJsl4SjnqWFuOJw1BRCl8Q0U8PEGHmTHj2FFHz6nlxaJKUtVJ3WFRA&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQAm0L5CxjXGVPVVbh5j_hBOiBa221nRs9zPucglyAJOww&oe=6A556F3C",
-      "salesperson": "غير محدد",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/582132264_1177376630425872_5366191039321272413_n.jpg?_nc_cat=111&ccb=1-7&_nc_ohc=6yGAPOkcXOYQ7kNvwHKVSiB&_nc_oc=AdpViAR2IRt_re2DoDMHt-6EGp6XXMUGVSVgqFg1krIeSlh4bXNqwKtBWZzd-Cg3nPQ&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=AAwGEdEEAAAA&_nc_gid=ImuEMIY1ovQn3EFsfulaBw&_nc_tpa=Q5bMBQGGPKSshjB0hIoun3HkdfADaqfGzRe4MIjY2Hw8ut_tK99SIOp4MtsavNcGOVSE4XlYF1ShNeSWQQ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQA4lZ2J16wRD4BQRIS3Hb_iuo33GLLU8748R0raJH5_mg&oe=6A556F3C",
+      "salesperson": "محمد صبيح",
       "account": "el1",
       "month": "2026-07",
       "spend": 502,
@@ -200,8 +209,8 @@
       "ad_id": "52526166476336",
       "creativeType": "صورة",
       "creativeLink": "https://www.facebook.com/ads/library/?id=52526166476336",
-      "thumbnail_url": "https://scontent-lhr6-1.xx.fbcdn.net/v/t15.5256-10/597442150_1897067401167612_8730106304945309404_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=IkaXZAdjHUIQ7kNvwGn-nXb&_nc_oc=AdpuKrjiQP0RbyoarkF3t-bgZapWi6P_9sUKNyVai0394XJoPTLuTUTdOrwtAu5OKB0&_nc_zt=23&_nc_ht=scontent-lhr6-1.xx&edm=AAwGEdEEAAAA&_nc_gid=0xw4hahdPwWZWI8Y5RHWCQ&_nc_tpa=Q5bMBQGuyz91QUDRWgZzS2AiHDoqyUwvmZAp9RnA-AnWPi9XvyuRi-ZPGKdgZ_8JlpA6Wj2QzT-L83v2Qg&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQB5tEWXNmmyV3jM9giRlTcb1VGX78G55PehckdTGJOSIw&oe=6A5573F0",
-      "salesperson": "غير محدد",
+      "thumbnail_url": "https://scontent-lhr6-1.xx.fbcdn.net/v/t15.5256-10/597442150_1897067401167612_8730106304945309404_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=IkaXZAdjHUIQ7kNvwGn-nXb&_nc_oc=AdpuKrjiQP0RbyoarkF3t-bgZapWi6P_9sUKNyVai0394XJoPTLuTUTdOrwtAu5OKB0&_nc_zt=23&_nc_ht=scontent-lhr6-1.xx&edm=AAwGEdEEAAAA&_nc_gid=9OFhIbj3uCrPNkkBQLr_xA&_nc_tpa=Q5bMBQEE45qfGExiACNyeUV_LS-HZbRbvocWaLZmQW9QQf0q6qFFFKXofbYTvKQkfZIKIF40jifa40Q4xg&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQAA5k9lTJV-2Z6AivqPP_fneTi7iXlDyZGVFygJq4JIbg&oe=6A5573F0",
+      "salesperson": "محمد صبيح",
       "account": "Ellwaa one",
       "month": "2026-07",
       "spend": 0,
