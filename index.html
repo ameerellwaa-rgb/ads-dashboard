@@ -1,4 +1,4 @@
-﻿﻿<!DOCTYPE html>
+﻿﻿﻿<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
@@ -512,7 +512,8 @@ const DATA_URL = 'https://raw.githubusercontent.com/ameerellwaa-rgb/ads-dashboar
 
 const OWNER_MAP = {
   'Ellwaa one': 'أستاذ إيهاب',
-  'el1':        'أستاذ إيهاب'
+  'el1':        'أستاذ إيهاب',
+  'Shokri':     'أحمد شكري'
 };
 
 function ownerOf(account) {
@@ -641,7 +642,31 @@ function getAdsAggregated(month) {
 }
 
 function getSalesData(month) {
-  return (G.salesPerformance || []);
+  const monthKey = (month && month !== 'all') ? month : null;
+  const ownerAds = (G.ads || [])
+    .filter(a => ownerOf(a.account) === currentOwner)
+    .filter(a => !monthKey || a.month === monthKey);
+
+  const bysp = {};
+  ownerAds.forEach(a => {
+    if (!a.salesperson || a.salesperson === 'غير محدد') return;
+    if (!bysp[a.salesperson]) bysp[a.salesperson] = { salesperson: a.salesperson, spend: 0, messages: 0, clients: 0, mom: {} };
+    bysp[a.salesperson].spend    += (parseFloat(a.spend)    || 0);
+    bysp[a.salesperson].messages += (parseFloat(a.messages) || 0);
+  });
+
+  // Overlay clients + mom from global salesPerformance (current month only)
+  const curKey = getCurrentMonthKey();
+  if (!monthKey || monthKey === curKey) {
+    (G.salesPerformance || []).forEach(s => {
+      if (bysp[s.salesperson]) {
+        bysp[s.salesperson].clients = s.clients || 0;
+        bysp[s.salesperson].mom     = s.mom     || {};
+      }
+    });
+  }
+
+  return Object.values(bysp);
 }
 
 function renderSales(month) {
