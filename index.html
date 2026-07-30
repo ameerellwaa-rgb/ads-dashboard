@@ -741,24 +741,19 @@ function renderSales(month) {
     div.innerHTML = `
       <div class="card-header">
         <div>
-          <div class="card-name"><span class="perf-dot ${perfCls}"></span>${s.salesperson}</div>
-          <div class="card-account">${s.account || ''}</div>
-          <div class="card-perf">${perfLbl}</div>
+          <div class="card-name">${s.salesperson}</div>
         </div>
-        <span class="rank-badge ${rankC[i] || 'rank-x'}">${rankL[i] || '#' + (i+1)}</span>
       </div>
       <div class="stats-grid">
         <div class="stat-item">
           <div class="stat-header"><span class="stat-label">تكلفة العميل</span>${mkIB(sid+'_cpc')}</div>
           <div class="hint" id="${sid}_cpc">الصرف الكلي ÷ عدد العملاء — كل عميل كلّف كام</div>
           <div class="stat-val">${fmt(cpcVal)} ج</div>
-          <div class="stat-change ${clDelta >= 0 ? 'up' : 'down'}">${clDelta >= 0 ? '▲' : '▼'} ${Math.abs(clDelta).toFixed(1)}% العملاء عن الشهر السابق</div>
         </div>
         <div class="stat-item">
           <div class="stat-header"><span class="stat-label">الصرف الكلي</span>${mkIB(sid+'_sp')}</div>
           <div class="hint" id="${sid}_sp">المبلغ المصروف على إعلانات السيلز ده في الشهر</div>
           <div class="stat-val">${fmt(s.spend)} ج</div>
-          <div class="stat-change ${spDelta >= 0 ? 'up' : 'down'}">${spDelta >= 0 ? '▲' : '▼'} ${Math.abs(spDelta).toFixed(1)}% عن الشهر السابق</div>
         </div>
         <div class="stat-item">
           <div class="stat-header"><span class="stat-label">المسدجات</span>${mkIB(sid+'_msg')}</div>
@@ -773,23 +768,13 @@ function renderSales(month) {
           <div class="stat-change">من إجمالي ${s.clients} عميل</div>
         </div>
       </div>
-      <div class="metric-row">
-        <div class="metric-header"><span class="metric-label">معدل التحويل</span>${mkIB(sid+'_conv')}</div>
-        <div class="hint" id="${sid}_conv">السيلز محتاج يكلم كام شخص عشان يطلع بعميل واحد — كل ما قلّ كان أحسن</div>
-        <div class="metric-val">كل <strong>${msgsPerClient}</strong> مسدج → عميل واحد</div>
-      </div>
-      <div class="metric-row">
-        <div class="metric-header"><span class="metric-label">أفضل يوم أداء</span>${mkIB(sid+'_day')}</div>
-        <div class="hint" id="${sid}_day">اليوم اللي فيه أكتر مسدجات في الشهر — بيساعد في تحديد أوقات الإعلانات</div>
-        <div class="metric-muted"><i class="ti ti-clock" aria-hidden="true" style="font-size:11px"></i> هيظهر لما البيانات اليومية توصل</div>
-      </div>
       <div class="ads-toggle" onclick="toggleExp('${key.replace(/'/g,"\\'")}')">
         <span><i class="ti ti-photo-film" aria-hidden="true" style="font-size:12px"></i> الإعلانات (${salesAds.length})</span>
         <i class="ti ${exp ? 'ti-chevron-up' : 'ti-chevron-down'}" aria-hidden="true" style="font-size:12px"></i>
       </div>
       ${exp ? salesAds.map(ad => `
         <div class="ad-mini">
-          ${thumbSm(ad.thumbnail_url, ad.creativeType)}
+          ${thumbSm(ad.thumbnail_url, fixType(ad.creativeType))}
           <div class="ad-mini-info">
             <div class="ad-mini-camp">${ad.campaign}</div>
             <div class="ad-mini-name">${ad.ad}</div>
@@ -805,6 +790,11 @@ function renderSales(month) {
 function toggleExp(key) {
   expandedCards[key] = !expandedCards[key];
   renderSales(currentMonth);
+}
+
+function fixType(t) {
+  const m = {'ØµÙˆØ±Ø©':'صورة','ÙÙŠØ¯ÙŠÙˆ':'فيديو','ÙÙŠØ¯Ùˆ':'فيديو'};
+  return (t && m[t]) ? m[t] : (t || '');
 }
 
 function renderAds(month) {
@@ -849,17 +839,16 @@ function renderAds(month) {
     div.className = 'ad-card';
     div.innerHTML = `
       <div class="ad-card-top">
-        ${thumbLg(ad.thumbnail_url, ad.creativeType)}
+        ${thumbLg(ad.thumbnail_url, fixType(ad.creativeType))}
         <div class="ad-card-info">
           <div class="ad-card-camp">${ad.campaign} · ${ad.account}</div>
           <div class="ad-card-name">${ad.ad}</div>
           <div class="ad-tags">
-            <span class="tag ${ad.creativeType === 'فيديو' ? 'tag-video' : 'tag-image'}">
-              <i class="ti ${ad.creativeType === 'فيديو' ? 'ti-video' : 'ti-photo'}" aria-hidden="true"></i>
-              ${ad.creativeType}
+            <span class="tag ${fixType(ad.creativeType) === 'فيديو' ? 'tag-video' : 'tag-image'}">
+              <i class="ti ${fixType(ad.creativeType) === 'فيديو' ? 'ti-video' : 'ti-photo'}" aria-hidden="true"></i>
+              ${fixType(ad.creativeType)}
             </span>
-            <span class="tag tag-sales">${ad.salesperson}</span>
-            <span class="tag tag-rank">#${idx + 1} ${rankL[idx] || ''} تكلفة مسدج</span>
+            ${ad.salesperson && ad.salesperson !== 'غير محدد' ? `<span class="tag tag-sales">${ad.salesperson}</span>` : ''}
           </div>
         </div>
         ${ad.creativeLink
