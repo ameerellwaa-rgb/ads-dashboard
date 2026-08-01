@@ -437,6 +437,7 @@
 
     .tag-stopped  { background: rgba(248,81,73,.15); color: var(--danger-text); }
     .tag-archived { background: rgba(110,118,129,.15); color: var(--text-muted); }
+    .tag-active   { background: rgba(63,185,80,.15);  color: var(--success-text); }
 
     .ads-filter { display: flex; gap: 8px; padding: 0 0 14px; flex-wrap: wrap; }
     .ads-filter-btn {
@@ -658,6 +659,7 @@ function getAdsAggregated(month) {
         thumbnail_url: a.thumbnail_url, salesperson: a.salesperson,
         effective_status: a.effective_status || 'ACTIVE',
         start_time: a.start_time || null,
+        end_time: a.end_time || null,
         daily_budget: a.daily_budget !== undefined ? a.daily_budget : null,
         spend: 0, impressions: 0, messages: 0
       };
@@ -668,6 +670,7 @@ function getAdsAggregated(month) {
     if (a.thumbnail_url) map[key].thumbnail_url = a.thumbnail_url;
     if (a.effective_status && a.effective_status !== 'ACTIVE') map[key].effective_status = a.effective_status;
     if (!map[key].start_time && a.start_time) map[key].start_time = a.start_time;
+    if (!map[key].end_time   && a.end_time)   map[key].end_time   = a.end_time;
     if (a.daily_budget != null) map[key].daily_budget = a.daily_budget;
   });
   Object.values(map).forEach(a => {
@@ -698,6 +701,14 @@ function getSalesData(month) {
         bysp[s.salesperson].clients = s.clients || 0;
         bysp[s.salesperson].mom     = s.mom     || {};
       }
+    });
+  }
+
+  // Overlay clients from archive for historical months
+  if (monthKey && monthKey !== curKey && G.archiveClients && G.archiveClients[monthKey]) {
+    const archiveMonth = G.archiveClients[monthKey];
+    Object.keys(archiveMonth).forEach(sp => {
+      if (bysp[sp]) bysp[sp].clients = archiveMonth[sp];
     });
   }
 
@@ -854,6 +865,11 @@ function daysRunning(isoStr) {
   if (isNaN(start)) return null;
   return Math.max(0, Math.floor((Date.now() - start) / 86400000));
 }
+function daysRange(startIso, endIso) {
+  const s = new Date(startIso), e = new Date(endIso);
+  if (isNaN(s) || isNaN(e)) return null;
+  return Math.max(1, Math.round((e - s) / 86400000));
+}
 
 function setAdsStatus(status) {
   currentAdsStatus = status;
@@ -921,7 +937,9 @@ function renderAds(month) {
               ${fixType(ad.creativeType)}
             </span>
             ${ad.salesperson && ad.salesperson !== 'غير محدد' ? `<span class="tag tag-sales">${ad.salesperson}</span>` : ''}
-            ${isStopped ? `<span class="tag tag-stopped"><i class="ti ti-pause-circle" aria-hidden="true"></i> ${statusLabel}</span>` : ''}
+            ${isStopped
+              ? `<span class="tag tag-stopped"><i class="ti ti-pause-circle" aria-hidden="true"></i> ${statusLabel}</span>`
+              : `<span class="tag tag-active"><i class="ti ti-circle-check" aria-hidden="true"></i> نشط</span>`}
           </div>
         </div>
         ${ad.creativeLink
@@ -930,9 +948,12 @@ function renderAds(month) {
              </a>`
           : ''}
       </div>
-      ${(ad.start_time || ad.daily_budget != null) ? `<div class="ad-extra-row">
+      ${(ad.start_time || ad.end_time || ad.daily_budget != null) ? `<div class="ad-extra-row">
         ${ad.start_time ? `<span class="extra-item"><i class="ti ti-calendar-event" aria-hidden="true"></i> بدأ: ${formatArabicDate(ad.start_time)}</span>` : ''}
-        ${ad.start_time ? `<span class="extra-item"><i class="ti ti-clock" aria-hidden="true"></i> ${daysRunning(ad.start_time)} يوم</span>` : ''}
+        ${(ad.end_time && isStopped) ? `<span class="extra-item"><i class="ti ti-calendar-x" aria-hidden="true"></i> انتهى: ${formatArabicDate(ad.end_time)}</span>` : ''}
+        ${(ad.start_time && ad.end_time && isStopped)
+          ? `<span class="extra-item"><i class="ti ti-clock" aria-hidden="true"></i> ${daysRange(ad.start_time, ad.end_time)} يوم</span>`
+          : (ad.start_time && !isStopped ? `<span class="extra-item"><i class="ti ti-clock" aria-hidden="true"></i> ${daysRunning(ad.start_time)} يوم نشط</span>` : '')}
         ${ad.daily_budget != null ? `<span class="extra-item"><i class="ti ti-coins" aria-hidden="true"></i> يومي: ${fmt(ad.daily_budget / 100)} ج</span>` : ''}
       </div>` : ''}
       <div class="ad-metrics">
@@ -975,7 +996,7 @@ function renderAds(month) {
 }
 
 function render() {
-  if (currentTab === 'sales') renderSales(getCurrentMonthKey());
+  if (currentTab === 'sales') renderSales(currentMonth);
   else                        renderAds(currentMonth);
 }
 
@@ -1010,6 +1031,11 @@ async function init() {
     const res = await fetch(DATA_URL + '?t=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
     G = await res.json();
+
+    try {
+      const archRes = await fetch(DATA_URL.replace('data.json', 'archive.json') + '?t=' + Date.now());
+      if (archRes.ok) G.archiveClients = await archRes.json();
+    } catch (e) { G.archiveClients = {}; }
 
     if (!G.salesPerformance && !G.ads) {
       document.getElementById('loading').style.display = 'none';
