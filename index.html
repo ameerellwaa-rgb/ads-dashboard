@@ -434,6 +434,32 @@
     }
 
     .empty-state i { font-size: 32px; display: block; margin-bottom: 10px; }
+
+    .tag-stopped  { background: rgba(248,81,73,.15); color: var(--danger-text); }
+    .tag-archived { background: rgba(110,118,129,.15); color: var(--text-muted); }
+
+    .ads-filter { display: flex; gap: 8px; padding: 0 0 14px; flex-wrap: wrap; }
+    .ads-filter-btn {
+      padding: 6px 16px; border-radius: 20px; font-size: 12px; cursor: pointer;
+      border: 0.5px solid var(--border-strong); background: transparent;
+      color: var(--text-muted); font-family: inherit; transition: all 0.15s;
+    }
+    .ads-filter-btn:hover { color: var(--text); }
+    .ads-filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+    .ad-extra-row {
+      display: flex; flex-wrap: wrap; gap: 14px; font-size: 11px;
+      color: var(--text-muted); padding: 8px 0 4px;
+      border-top: 0.5px solid var(--border); margin-top: 10px;
+    }
+    .extra-item { display: flex; align-items: center; gap: 4px; }
+    .extra-item i { font-size: 12px; }
+
+    .mini-status-badge {
+      font-size: 9px; padding: 1px 5px; border-radius: 8px; margin-right: 4px;
+      background: rgba(248,81,73,.15); color: var(--danger-text);
+    }
+    .ad-mini-stopped { opacity: 0.7; }
   </style>
 </head>
 <body>
@@ -504,7 +530,14 @@
   </div>
 
   <div class="section" id="salesSection"><div class="sales-grid" id="salesGrid"></div></div>
-  <div class="section" id="adsSection" style="display:none"><div class="ads-main-grid" id="adsGrid"></div></div>
+  <div class="section" id="adsSection" style="display:none">
+    <div class="ads-filter">
+      <button class="ads-filter-btn active" data-status="all" onclick="setAdsStatus('all')">الكل</button>
+      <button class="ads-filter-btn" data-status="active" onclick="setAdsStatus('active')">نشط</button>
+      <button class="ads-filter-btn" data-status="stopped" onclick="setAdsStatus('stopped')">موقوف أو محذوف</button>
+    </div>
+    <div class="ads-main-grid" id="adsGrid"></div>
+  </div>
 </div>
 
 <script>
@@ -530,6 +563,7 @@ let currentTab = 'sales';
 let currentMonth = '';
 let currentOwner = '';
 let expandedCards = {};
+let currentAdsStatus = 'all';
 
 const fmt = n => Math.round(n).toLocaleString('ar-EG');
 const fmtD = (n, d) => Number(n).toFixed(d);
@@ -619,21 +653,22 @@ function getAdsAggregated(month) {
     const key = a.ad_id || (a.campaign + '||' + a.ad);
     if (!map[key]) {
       map[key] = {
-        account: a.account,
-        campaign: a.campaign,
-        ad: a.ad,
-        ad_id: a.ad_id,
-        creativeType: a.creativeType,
-        creativeLink: a.creativeLink,
-        thumbnail_url: a.thumbnail_url,
-        salesperson: a.salesperson,
+        account: a.account, campaign: a.campaign, ad: a.ad, ad_id: a.ad_id,
+        creativeType: a.creativeType, creativeLink: a.creativeLink,
+        thumbnail_url: a.thumbnail_url, salesperson: a.salesperson,
+        effective_status: a.effective_status || 'ACTIVE',
+        start_time: a.start_time || null,
+        daily_budget: a.daily_budget !== undefined ? a.daily_budget : null,
         spend: 0, impressions: 0, messages: 0
       };
     }
-    map[key].spend      += parseFloat(a.spend)      || 0;
-    map[key].impressions += parseFloat(a.impressions) || 0;
-    map[key].messages   += parseFloat(a.messages)   || 0;
+    map[key].spend       += parseFloat(a.spend)       || 0;
+    map[key].impressions += parseFloat(a.impressions)  || 0;
+    map[key].messages    += parseFloat(a.messages)     || 0;
     if (a.thumbnail_url) map[key].thumbnail_url = a.thumbnail_url;
+    if (a.effective_status && a.effective_status !== 'ACTIVE') map[key].effective_status = a.effective_status;
+    if (!map[key].start_time && a.start_time) map[key].start_time = a.start_time;
+    if (a.daily_budget != null) map[key].daily_budget = a.daily_budget;
   });
   Object.values(map).forEach(a => {
     a.cost_per_message = a.messages > 0 ? a.spend / a.messages : 0;
@@ -734,7 +769,11 @@ function renderSales(month) {
     const sid = 'sp_' + i;
 
     const salesAds = allAds.filter(a => a.salesperson === s.salesperson)
-                            .sort((a, b) => a.cost_per_message - b.cost_per_message);
+                            .sort((a, b) => {
+                              const sa = (a.effective_status || 'ACTIVE') === 'ACTIVE' ? 0 : 1;
+                              const sb = (b.effective_status || 'ACTIVE') === 'ACTIVE' ? 0 : 1;
+                              return sa !== sb ? sa - sb : a.cost_per_message - b.cost_per_message;
+                            });
 
     const div = document.createElement('div');
     div.className = 'card';
@@ -772,16 +811,20 @@ function renderSales(month) {
         <span><i class="ti ti-photo-film" aria-hidden="true" style="font-size:12px"></i> الإعلانات (${salesAds.length})</span>
         <i class="ti ${exp ? 'ti-chevron-up' : 'ti-chevron-down'}" aria-hidden="true" style="font-size:12px"></i>
       </div>
-      ${exp ? salesAds.map(ad => `
-        <div class="ad-mini">
+      ${exp ? salesAds.map(ad => {
+        const stopped = ad.effective_status && ad.effective_status !== 'ACTIVE';
+        const stLbl = ad.effective_status === 'DELETED' ? 'محذوف' : ad.effective_status === 'ARCHIVED' ? 'مؤرشف' : 'موقوف';
+        return `
+        <div class="ad-mini${stopped ? ' ad-mini-stopped' : ''}">
           ${thumbSm(ad.thumbnail_url, fixType(ad.creativeType))}
           <div class="ad-mini-info">
-            <div class="ad-mini-camp">${ad.campaign}</div>
+            <div class="ad-mini-camp">${ad.campaign}${stopped ? `<span class="mini-status-badge">${stLbl}</span>` : ''}</div>
             <div class="ad-mini-name">${ad.ad}</div>
           </div>
           <div class="ad-mini-spend">${fmt(ad.spend)} ج</div>
         </div>
-      `).join('') : ''}
+      `;
+      }).join('') : ''}
     `;
     grid.appendChild(div);
   });
@@ -797,10 +840,38 @@ function fixType(t) {
   return (t && m[t]) ? m[t] : (t || '');
 }
 
+function formatArabicDate(isoStr) {
+  if (!isoStr) return null;
+  const d = new Date(isoStr);
+  if (isNaN(d)) return null;
+  const mns = ['يناير','فبراير','مارس','أبريل','مايو','يونيو','يوليو','أغسطس','سبتمبر','أكتوبر','نوفمبر','ديسمبر'];
+  return d.getDate() + ' ' + mns[d.getMonth()] + ' ' + d.getFullYear();
+}
+
+function daysRunning(isoStr) {
+  if (!isoStr) return null;
+  const start = new Date(isoStr);
+  if (isNaN(start)) return null;
+  return Math.max(0, Math.floor((Date.now() - start) / 86400000));
+}
+
+function setAdsStatus(status) {
+  currentAdsStatus = status;
+  document.querySelectorAll('.ads-filter-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.status === status);
+  });
+  renderAds(currentMonth);
+}
+
 function renderAds(month) {
-  const allAds = getAdsAggregated(month)
-    .filter(a => ownerOf(a.account) === currentOwner)
-    .sort((a, b) => a.cost_per_message - b.cost_per_message);
+  let allAds = getAdsAggregated(month)
+    .filter(a => ownerOf(a.account) === currentOwner);
+  if (currentAdsStatus === 'active') {
+    allAds = allAds.filter(a => (a.effective_status || 'ACTIVE') === 'ACTIVE');
+  } else if (currentAdsStatus === 'stopped') {
+    allAds = allAds.filter(a => a.effective_status && a.effective_status !== 'ACTIVE');
+  }
+  allAds.sort((a, b) => a.cost_per_message - b.cost_per_message);
 
   const totalSpend = allAds.reduce((a, d) => a + d.spend, 0);
   const totalMsg   = allAds.reduce((a, d) => a + d.messages, 0);
@@ -820,7 +891,6 @@ function renderAds(month) {
   document.getElementById('sClientsSub').textContent = 'جنيه / رسالة';
   document.getElementById('sCPCSub').textContent  = 'إمبريشنز: ' + fmt(totalImpr / 1000) + 'k';
 
-  const rankL = ['الأرخص', 'الثاني', 'الثالث', 'الرابع', 'الخامس', 'السادس', 'السابع', 'الثامن'];
   const grid = document.getElementById('adsGrid');
   grid.innerHTML = '';
 
@@ -834,6 +904,8 @@ function renderAds(month) {
     const rr  = ad.impressions > 0 ? fmtD((ad.messages / ad.impressions) * 100, 3) : '0';
     const rrPer1k = ad.impressions > 0 ? Math.round((ad.messages / ad.impressions) * 1000) : 0;
     const aid = 'ad_' + idx;
+    const isStopped = ad.effective_status && ad.effective_status !== 'ACTIVE';
+    const statusLabel = ad.effective_status === 'DELETED' ? 'محذوف' : ad.effective_status === 'ARCHIVED' ? 'مؤرشف' : 'موقوف';
 
     const div = document.createElement('div');
     div.className = 'ad-card';
@@ -849,6 +921,7 @@ function renderAds(month) {
               ${fixType(ad.creativeType)}
             </span>
             ${ad.salesperson && ad.salesperson !== 'غير محدد' ? `<span class="tag tag-sales">${ad.salesperson}</span>` : ''}
+            ${isStopped ? `<span class="tag tag-stopped"><i class="ti ti-pause-circle" aria-hidden="true"></i> ${statusLabel}</span>` : ''}
           </div>
         </div>
         ${ad.creativeLink
@@ -857,6 +930,11 @@ function renderAds(month) {
              </a>`
           : ''}
       </div>
+      ${(ad.start_time || ad.daily_budget != null) ? `<div class="ad-extra-row">
+        ${ad.start_time ? `<span class="extra-item"><i class="ti ti-calendar-event" aria-hidden="true"></i> بدأ: ${formatArabicDate(ad.start_time)}</span>` : ''}
+        ${ad.start_time ? `<span class="extra-item"><i class="ti ti-clock" aria-hidden="true"></i> ${daysRunning(ad.start_time)} يوم</span>` : ''}
+        ${ad.daily_budget != null ? `<span class="extra-item"><i class="ti ti-coins" aria-hidden="true"></i> يومي: ${fmt(ad.daily_budget / 100)} ج</span>` : ''}
+      </div>` : ''}
       <div class="ad-metrics">
         <div class="am">
           <div class="am-top"><span class="am-label">الصرف</span>${mkIB(aid+'_sp')}</div>
@@ -920,6 +998,10 @@ function setOwner(el, owner) {
   el.classList.add('active');
   currentOwner = owner;
   expandedCards = {};
+  currentAdsStatus = 'all';
+  document.querySelectorAll('.ads-filter-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.status === 'all');
+  });
   render();
 }
 
