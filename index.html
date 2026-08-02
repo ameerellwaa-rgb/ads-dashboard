@@ -694,7 +694,8 @@ function getSalesData(month) {
   });
 
   // Overlay clients + mom from global salesPerformance (current month only)
-  const curKey = getCurrentMonthKey();
+  const now = new Date();
+  const curKey = now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0');
   if (!monthKey || monthKey === curKey) {
     (G.salesPerformance || []).forEach(s => {
       if (bysp[s.salesperson]) {
