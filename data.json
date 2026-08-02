@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-02T06:00:29.528Z",
+  "lastUpdated": "2026-08-02T08:18:07.969Z",
   "trendMonths": [
     {
       "key": "2026-03",
@@ -60,11 +60,11 @@
   "salesPerformance": [
     {
       "salesperson": "ا بلال على",
-      "spend": 2771.65,
+      "spend": 2773.21,
       "messages": 30,
       "clients": 1,
-      "cost_per_message": 92.39,
-      "cost_per_client": 2771.65,
+      "cost_per_message": 92.44,
+      "cost_per_client": 2773.21,
       "mom": {
         "prevSpend": 62058.89,
         "prevMessages": 493,
@@ -75,10 +75,10 @@
     },
     {
       "salesperson": "مهندس ابانوب",
-      "spend": 2326.3,
+      "spend": 2326.47,
       "messages": 28,
       "clients": 0,
-      "cost_per_message": 83.08,
+      "cost_per_message": 83.09,
       "cost_per_client": null,
       "mom": {
         "prevSpend": 47582.24,
@@ -90,11 +90,11 @@
     },
     {
       "salesperson": "ا محمد احمد لواء",
-      "spend": 1881.51,
+      "spend": 1883.28,
       "messages": 23,
       "clients": 1,
-      "cost_per_message": 81.8,
-      "cost_per_client": 1881.51,
+      "cost_per_message": 81.88,
+      "cost_per_client": 1883.28,
       "mom": {
         "prevSpend": 42638.39,
         "prevMessages": 638,
@@ -105,10 +105,10 @@
     },
     {
       "salesperson": "ابراهيم",
-      "spend": 1583.07,
+      "spend": 1583.5,
       "messages": 38,
       "clients": 0,
-      "cost_per_message": 41.66,
+      "cost_per_message": 41.67,
       "cost_per_client": null,
       "mom": {
         "prevSpend": 31240.33,
@@ -120,10 +120,10 @@
     },
     {
       "salesperson": "هبه",
-      "spend": 1552.36,
+      "spend": 1553.11,
       "messages": 25,
       "clients": 0,
-      "cost_per_message": 62.09,
+      "cost_per_message": 62.12,
       "cost_per_client": null,
       "mom": {
         "prevSpend": 33125.38,
@@ -135,7 +135,7 @@
     },
     {
       "salesperson": "مؤمن",
-      "spend": 1443.32,
+      "spend": 1443.5,
       "messages": 22,
       "clients": 0,
       "cost_per_message": 65.61,
@@ -150,10 +150,10 @@
     },
     {
       "salesperson": "رحمه",
-      "spend": 1377.87,
+      "spend": 1378.76,
       "messages": 29,
       "clients": 0,
-      "cost_per_message": 47.51,
+      "cost_per_message": 47.54,
       "cost_per_client": null,
       "mom": {
         "prevSpend": 32023.54,
@@ -165,11 +165,11 @@
     },
     {
       "salesperson": "اشرف",
-      "spend": 901.38,
+      "spend": 901.43,
       "messages": 14,
       "clients": 1,
-      "cost_per_message": 64.38,
-      "cost_per_client": 901.38,
+      "cost_per_message": 64.39,
+      "cost_per_client": 901.43,
       "mom": {
         "prevSpend": 67966.72,
         "prevMessages": 875,
@@ -180,10 +180,10 @@
     },
     {
       "salesperson": "يوسف جمعه",
-      "spend": 894.54,
+      "spend": 894.7,
       "messages": 15,
       "clients": 0,
-      "cost_per_message": 59.64,
+      "cost_per_message": 59.65,
       "cost_per_client": null,
       "mom": {
         "prevSpend": 21126.7,
@@ -195,10 +195,10 @@
     },
     {
       "salesperson": "امير المحاسب",
-      "spend": 854.22,
+      "spend": 854.48,
       "messages": 8,
       "clients": 0,
-      "cost_per_message": 106.78,
+      "cost_per_message": 106.81,
       "cost_per_client": null,
       "mom": {
         "prevSpend": 2029.52,
@@ -210,13 +210,13 @@
     },
     {
       "salesperson": "منار",
-      "spend": 774.55,
+      "spend": 774.64,
       "messages": 16,
       "clients": 0,
       "cost_per_message": 48.41,
       "cost_per_client": null,
       "mom": {
-        "prevSpend": 5613.56,
+        "prevSpend": 5613.69,
         "prevMessages": 90,
         "prevClients": 0,
         "spendDelta": -86.2,
@@ -225,10 +225,10 @@
     },
     {
       "salesperson": "محمود رمضان",
-      "spend": 627.33,
+      "spend": 627.71,
       "messages": 3,
       "clients": 0,
-      "cost_per_message": 209.11,
+      "cost_per_message": 209.24,
       "cost_per_client": null,
       "mom": {
         "prevSpend": 11521.16,
@@ -240,10 +240,10 @@
     },
     {
       "salesperson": "ابراهيم درويش",
-      "spend": 607.74,
+      "spend": 607.96,
       "messages": 10,
       "clients": 0,
-      "cost_per_message": 60.77,
+      "cost_per_message": 60.8,
       "cost_per_client": null,
       "mom": {
         "prevSpend": 6315.86,
@@ -254,26 +254,11 @@
       }
     },
     {
-      "salesperson": "مهندس كريم",
-      "spend": 565.35,
-      "messages": 23,
-      "clients": 0,
-      "cost_per_message": 24.58,
-      "cost_per_client": null,
-      "mom": {
-        "prevSpend": 8407.95,
-        "prevMessages": 282,
-        "prevClients": 0,
-        "spendDelta": -93.3,
-        "clientsDelta": null
-      }
-    },
-    {
       "salesperson": "عمر",
-      "spend": 548.42,
+      "spend": 548.62,
       "messages": 8,
       "clients": 0,
-      "cost_per_message": 68.55,
+      "cost_per_message": 68.58,
       "cost_per_client": null,
       "mom": {
         "prevSpend": 15112.32,
@@ -285,16 +270,31 @@
     },
     {
       "salesperson": "اسراء",
-      "spend": 470.7,
+      "spend": 472.49,
       "messages": 17,
       "clients": 2,
-      "cost_per_message": 27.69,
-      "cost_per_client": 235.35,
+      "cost_per_message": 27.79,
+      "cost_per_client": 236.25,
       "mom": {
         "prevSpend": 18488.26,
         "prevMessages": 382,
         "prevClients": 0,
-        "spendDelta": -97.5,
+        "spendDelta": -97.4,
+        "clientsDelta": null
+      }
+    },
+    {
+      "salesperson": "مهندس كريم",
+      "spend": 444.75,
+      "messages": 20,
+      "clients": 0,
+      "cost_per_message": 22.24,
+      "cost_per_client": null,
+      "mom": {
+        "prevSpend": 6841.36,
+        "prevMessages": 268,
+        "prevClients": 0,
+        "spendDelta": -93.5,
         "clientsDelta": null
       }
     },
@@ -881,7 +881,7 @@
       "ad_id": "52517423311336",
       "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
       "creativeLink": "https://www.facebook.com/ads/library/?id=52517423311336",
-      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=EuxrFuWb6iWI_yMUjsi7yw&_nc_tpa=Q5bMBQELXoyYnOws6LDv4Y3UGEyeIvTlFgtSX-PDDV7JN9pdFkFhWaFj_SeGu9z2GLhagO_fRhMTMf0J9g&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQG0GahewemUrxFJEbQafjb4RItrVCI93I9yuTIHbBjI-A&oe=6A74B3A2",
+      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=DadzN2Wc7sdChsJLkB3TVg&_nc_tpa=Q5bMBQGffSZwjbrgEvSSbUkBiiWYDyfy0Yy9AseVnzbdL_xu2gAvtYKtNUPEtCTTbRlLq_624xPSmdndPw&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQEmgoi_Z-dPyamwFQ4S973QhErjmrH0ELJoB7-oiNxfyw&oe=6A74EBE2",
       "whatsapp": null,
       "salesperson": "اشرف",
       "account": "Ellwaa one",
@@ -936,7 +936,7 @@
       "daily_budget": null,
       "spend": 21454.9,
       "messages": 2,
-      "impressions": 136642,
+      "impressions": 136643,
       "cost_per_message": 10727.45
     },
     {
@@ -1211,7 +1211,7 @@
       "ad_id": "6983471817932",
       "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
       "creativeLink": "https://www.facebook.com/ads/library/?id=6983471817932",
-      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=ZPOvbkRIYGcuezfJJ_ePJw&_nc_tpa=Q5bMBQHdszvPkX8hDbsgQ5wZlbC2kA-X1DWBXhzpZkoId43whNDLoWARBURJEyb3RreXCL4SNZkHnJC96w&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQGj8kORnKd8N49JKu1XvZasxRw_GodDR7PC1b7x-G0lvg&oe=6A74B3A2",
+      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=zPfZ5r9JG4fLEpv-KISAQg&_nc_tpa=Q5bMBQFJcwJulIZNdOAkRUp3mR68Ka0IIQOwPdSqmhf_l_s8vvHd9Ve3-86P_4dpklWhazbAHLJWx590zQ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQFwlkVqrvYVwyYuUBOi3114vGJ2yYHaA1fManOAraZM9g&oe=6A74EBE2",
       "whatsapp": null,
       "salesperson": "ندي",
       "account": "Ellwaa one",
@@ -1365,7 +1365,7 @@
       "ad_id": "52555227562336",
       "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
       "creativeLink": "https://www.facebook.com/ads/library/?id=52555227562336",
-      "thumbnail_url": "https://scontent-mxp1-1.xx.fbcdn.net/v/t15.5256-10/597442150_1897067401167612_8730106304945309404_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=2tsWAMBXWuQQ7kNvwFTNrgc&_nc_oc=AdrlCTEMlhxEc8frcbvMjaRJQdd8JGnbW98DK2np-L3EGDTMqshFj775YroHkE8Wl7U&_nc_zt=23&_nc_ht=scontent-mxp1-1.xx&edm=AAwGEdEEAAAA&_nc_gid=79AU8-lsbvd5LM7am-OmQg&_nc_tpa=Q5bMBQFzu5GlxsyB5XSG9SvD6olOmxwng4FplBPd6SkiPD0O47hOq3hNQdk-wF9J-DEGOFDsOSxuFqJIYg&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQFytWSN5wys7cffCm9w6IzeIP__ByjmRKe2wTuP_fNONQ&oe=6A74A770",
+      "thumbnail_url": "https://scontent-mxp1-1.xx.fbcdn.net/v/t15.5256-10/597442150_1897067401167612_8730106304945309404_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=2tsWAMBXWuQQ7kNvwFTNrgc&_nc_oc=AdrlCTEMlhxEc8frcbvMjaRJQdd8JGnbW98DK2np-L3EGDTMqshFj775YroHkE8Wl7U&_nc_zt=23&_nc_ht=scontent-mxp1-1.xx&edm=AAwGEdEEAAAA&_nc_gid=dpgNgcaoMNfdbIfqOmB-XA&_nc_tpa=Q5bMBQEcL0iik-aNMI8aBt8xLX83oHH4p3ghBA-udenXxNhVzn0XZrY0PUoigcWue-7hF5mfrbhIxTzGuw&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQEEwX9U2jrKaeZjWk2rZzgGOSE0bvCNGSAFV2MVkmYVyQ&oe=6A74DFB0",
       "whatsapp": null,
       "salesperson": "ريمون",
       "account": "Ellwaa one",
@@ -1453,7 +1453,7 @@
       "ad_id": "120247192866470756",
       "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
       "creativeLink": "https://www.facebook.com/ads/library/?id=120247192866470756",
-      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=PxByASn3ZOl7pdEOlEy2kw&_nc_tpa=Q5bMBQGFW4dPclRDYNyEUdz_qYayVc6TP45D415AcMZZbrSUtvlNkT96KGDpGG8uw_D099GJK52DJlfr4A&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQFPiy1FAg2-JZkUjTcO9bkBv_lFN4o9WZN2Wv1XlX5n7A&oe=6A74B3A2",
+      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=wCJ2ZZdh40CXcSW8TZ6U3w&_nc_tpa=Q5bMBQHt2stPfo8QdqfvK8NIUiVqWqDcK2ElrjMj720CQlh_h9IgzVPw90Z-HpgLkVYjgRFVEJx_k-S4-g&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQECW6nTCUnhOiFyVGmAMsGBt9bf7MD1mqD3tl4XO1S9jw&oe=6A74EBE2",
       "whatsapp": null,
       "salesperson": "اشرف",
       "account": "el1",
@@ -1805,7 +1805,7 @@
       "ad_id": "52517423311336",
       "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
       "creativeLink": "https://www.facebook.com/ads/library/?id=52517423311336",
-      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=Ylp8huf1qj_om3Tvzxc5EQ&_nc_tpa=Q5bMBQGHxMg5M2FeYT7eUrcR6qrgRSI8w4GPkJKoFjFoMK2B37YpYfUNbi-clAHH06qFt6Hx2Mw8C3EPhQ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQFllOVAzW3fs4OXB9Ds8Ws-rHtkrUs31Lss0JfxxooeIQ&oe=6A74B3A2",
+      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=pZNDQwKjVonG0JPfiOQ0ZA&_nc_tpa=Q5bMBQEBoeIfN819tpbMFGhyrRJ-tm31ku8-IQPzmpvaQDp81yMA1zWqhXyf_4eLG2EBTvGb7wEAJ7uIlw&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQGSD6rdTvkK2bRgBk4wmT396ayr66rVWQa2ryDlv02UVw&oe=6A74EBE2",
       "whatsapp": null,
       "salesperson": "اشرف",
       "account": "Ellwaa one",
@@ -2179,7 +2179,7 @@
       "ad_id": "120248971547550756",
       "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
       "creativeLink": "https://www.facebook.com/ads/library/?id=120248971547550756",
-      "thumbnail_url": "https://scontent-mxp1-1.xx.fbcdn.net/v/t15.5256-10/744028119_27366468672975468_4660290355759117700_n.jpg?_nc_cat=106&ccb=1-7&_nc_ohc=nz__Jb1COKUQ7kNvwFhTYdt&_nc_oc=AdrghJZagBtxgXj-vGAjHodS5i5wDDeiBEawQSHKeWiJFLgaze0SjFNWDvezGpMoft4&_nc_zt=23&_nc_ht=scontent-mxp1-1.xx&edm=AAwGEdEEAAAA&_nc_gid=dLCcp4nGX70S852gfx9laQ&_nc_tpa=Q5bMBQFRwKMVfRYOjnPPAe3grWrvQipxMHpPzzqp66zTAdZY98zwwA6i46uxrjPCde7VNODxyTFhWoOGBw&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQHgCzqINoy5QdHxvhS3AP1YIUnvT0YdFgI85dzrAOnjxg&oe=6A74C70E",
+      "thumbnail_url": "https://scontent-mxp1-1.xx.fbcdn.net/v/t15.5256-10/744028119_27366468672975468_4660290355759117700_n.jpg?_nc_cat=106&ccb=1-7&_nc_ohc=nz__Jb1COKUQ7kNvwFhTYdt&_nc_oc=AdrghJZagBtxgXj-vGAjHodS5i5wDDeiBEawQSHKeWiJFLgaze0SjFNWDvezGpMoft4&_nc_zt=23&_nc_ht=scontent-mxp1-1.xx&edm=AAwGEdEEAAAA&_nc_gid=U0kPtKaLp8e2Ck7lhtkdBg&_nc_tpa=Q5bMBQENOGQ-tcrE2k62onVZzVZUjIMJdma2DEJljtabN2QjhlpDcfuzdVGuShYZAnFBuyxA37bbhlMnyA&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQEMcbWte5PZ8DBAH_s6QJrEs4v5UazM4iB7JmgbTAITvA&oe=6A74C70E",
       "whatsapp": null,
       "salesperson": "احمد صبيح",
       "account": "el1",
@@ -2487,7 +2487,7 @@
       "ad_id": "6983471817932",
       "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
       "creativeLink": "https://www.facebook.com/ads/library/?id=6983471817932",
-      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=wwZEA0V4mWsVjRaWHL-oaA&_nc_tpa=Q5bMBQHGkO9655gMyDOBA_6tSLuexqqsVtfJ2mGcH5r2uyKuujM9SCrKfoFeYHh67GQWgLoA0qopMKMUBQ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQHkMdCKmRfdPKEOBn0vfi_jYIowsfBapKXL2_aZyt0Ruw&oe=6A74B3A2",
+      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=isGIDy6N9Bw-D_pv1pAHQw&_nc_tpa=Q5bMBQFXnpv76zg9D6lREzloEBvAc3LozLNfj_8XR-nnTketTVNOo8FKNVUB_MOm9SAi_WRc7NZTTl7IPw&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQH-F0gZcIvMVSGHwl9KazdW1lJeGi-2Y5N-pHw2aXGvAA&oe=6A74EBE2",
       "whatsapp": null,
       "salesperson": "ندي",
       "account": "Ellwaa one",
@@ -2553,7 +2553,7 @@
       "ad_id": "120247192866470756",
       "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
       "creativeLink": "https://www.facebook.com/ads/library/?id=120247192866470756",
-      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=ApOxIesYBcw4FEOFV7qnSg&_nc_tpa=Q5bMBQFoDzy7xSiGHaFGultSCcGB8wWOjRlPMV3YVKkCP_H-CQHFr41ZU05xty1zSqPk0vWFUv9nfdPsvw&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQFxTXf_YGCIVhssZ5UY-Bqa2cdraZNZypYhPZpUiy1Njg&oe=6A74B3A2",
+      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=S1FydVo026CshrA2cFL8MA&_nc_tpa=Q5bMBQE_F-i6Rzp-nS9X1nxiERslcqO-NncrO2A9lUJYnFLLuyD1_0zdn-97UBtUrABFgm6tZMzsTYm4mg&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQE3auo3GTWu_2j4JKJQXsyehDkLZwUd84sAXLBU6W89-A&oe=6A74EBE2",
       "whatsapp": null,
       "salesperson": "اشرف",
       "account": "el1",
@@ -3004,7 +3004,7 @@
       "daily_budget": null,
       "spend": 6315.86,
       "messages": 134,
-      "impressions": 71970,
+      "impressions": 71971,
       "cost_per_message": 47.13
     },
     {
@@ -3037,7 +3037,7 @@
       "ad_id": "52560257751136",
       "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
       "creativeLink": "https://www.facebook.com/ads/library/?id=52560257751136",
-      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=-OUkHHTt3PyT1ha1-Oc38w&_nc_tpa=Q5bMBQHBkqyiNTi1KONM8iCdPSPoW4NeYl647g79zyCLPyPWE8EjJCQGFuBtMnsX7zO0jwhWV2jAdY4SWA&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQFIsOmg-IEL1a4i8Qq34UXiqC7l64EXNyj6flZvzL3ilg&oe=6A74B3A2",
+      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=q8o2x5yy-UsXjalJBc-B8Q&_nc_tpa=Q5bMBQEheucZO48t5kN-o1L9wGHEKeW94odpj_NEbLdxpQ0oSi59-9drPQY9hVw0D4FEo3fY5l2ZLO-qkw&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQF2zyJxub8kmG7kHFmENxlIDsnRiIQKiO0If__n3pJrEw&oe=6A74EBE2",
       "whatsapp": null,
       "salesperson": "مهندس كريم",
       "account": "Ellwaa one",
@@ -3046,10 +3046,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 6215.29,
+      "spend": 6215.53,
       "messages": 260,
-      "impressions": 143395,
-      "cost_per_message": 23.9
+      "impressions": 143396,
+      "cost_per_message": 23.91
     },
     {
       "account_id": "648114383956047",
@@ -3310,9 +3310,9 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 5613.56,
+      "spend": 5613.69,
       "messages": 90,
-      "impressions": 97073,
+      "impressions": 97074,
       "cost_per_message": 62.37
     },
     {
@@ -3741,7 +3741,7 @@
       "ad_id": "6983471817932",
       "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
       "creativeLink": "https://www.facebook.com/ads/library/?id=6983471817932",
-      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=AJ9lS9SWifCcZ7SO8QskCA&_nc_tpa=Q5bMBQEIdKbiu71qk0c5fBPczDZp-syqS7Dpk6x2kkJ9Ide4A57h2zkuyqDRQmi5h69begf5ciSvlDzQoQ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQG3hTUjnLcKvNCOMFGYkOiYq2X-ZxxCGhIA-DqAPouLSg&oe=6A74B3A2",
+      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=fUtNphsgpdISS15DIhJGxg&_nc_tpa=Q5bMBQGBdeirUSh8iZlFxNUIXTdEKmlUMXBkzzbUYKV6dS4yu3WPA0YWyNq4pcYFxfuIBTkmz5r9lmI_yg&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQGZC5Qpid-5Hax4-mxUGSMkFGRx3VLUigvhNbkPgSghXA&oe=6A74EBE2",
       "whatsapp": null,
       "salesperson": "ندي",
       "account": "Ellwaa one",
@@ -4049,7 +4049,7 @@
       "ad_id": "120248746586510756",
       "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
       "creativeLink": "https://www.facebook.com/ads/library/?id=120248746586510756",
-      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/725605470_3552143861605789_1806073667072175062_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=pilxO9-6uZwQ7kNvwFS6sBI&_nc_oc=AdqosgB60QYKqzKeYQELTv50WZm_-fWnn8RBoXN-8iBiuTbj1O1RBXn7VIU53kfsJGo&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=WbHs9bFXHGLoWogQXIU0mA&_nc_tpa=Q5bMBQGt8AVZX6_5OGXxUPEX3h65QfgML7An-N2z3KBPb47C1agBKaRHBPEVuZ0uxl5sVVKCti4XI5Y5Ag&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQECkNOtUYnHB213cQe1PFt7Nvkn5cBAPuHzClrNwEhFyQ&oe=6A74AE86",
+      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/725605470_3552143861605789_1806073667072175062_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=pilxO9-6uZwQ7kNvwFS6sBI&_nc_oc=AdqosgB60QYKqzKeYQELTv50WZm_-fWnn8RBoXN-8iBiuTbj1O1RBXn7VIU53kfsJGo&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=ptjfSfcnrRTHp0tGNWseiA&_nc_tpa=Q5bMBQGaZDpA--obchwlVKI5cPvh1fCr_LFn7f3Awxqcg2E2jKpeK9w_sXoK1Nn2Es382PYTYPg4CqOQ5Q&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQG06SP_03kKPd55Ha9x9SHzRCBCeG9joMFB7Ey5HjR3yA&oe=6A74E6C6",
       "whatsapp": null,
       "salesperson": "احمد صبيح",
       "account": "el1",
@@ -4115,7 +4115,7 @@
       "ad_id": "52563763247136",
       "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
       "creativeLink": "https://www.facebook.com/ads/library/?id=52563763247136",
-      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=AYDz2DJWUPNBRz75j9VhCA&_nc_tpa=Q5bMBQFdg1HnWuEwBP2z6UaDAFGxlWTckS1847ce96O3xzMzDl67t_f8bNBYGobatpXh2R4C9hYUWVxF_A&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQHSXN3TcjNYgh-CE2YwoNgX0jqrU_tVIChSZMGEA7aGTg&oe=6A74B3A2",
+      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=JBQndSd6DnXjfik4qxAouQ&_nc_tpa=Q5bMBQFyDNe6k0bMMke_8aciWJv6K7jOIu0PgVQaxaxJDs6J8nxFT4scH5tMDaoWvtChoh4rBsKBKVjAGg&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQEXu5DZ3du3PX6A9EIX3YZHRNBEICPc6_GfJxZ4JwYurQ&oe=6A74EBE2",
       "whatsapp": null,
       "salesperson": "امير المحاسب",
       "account": "Ellwaa one",
@@ -4128,28 +4128,6 @@
       "messages": 19,
       "impressions": 35653,
       "cost_per_message": 85.77
-    },
-    {
-      "account_id": "961170320177419",
-      "campaign_id": "120249374380700756",
-      "campaign": "كريم سعوديه",
-      "ad": "إعلان جديد بهدف التفاعل",
-      "ad_id": "120249374380690756",
-      "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
-      "creativeLink": "https://www.facebook.com/ads/library/?id=120249374380690756",
-      "thumbnail_url": "https://scontent-mxp1-1.xx.fbcdn.net/v/t15.5256-10/597442150_1897067401167612_8730106304945309404_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=2tsWAMBXWuQQ7kNvwFTNrgc&_nc_oc=AdrlCTEMlhxEc8frcbvMjaRJQdd8JGnbW98DK2np-L3EGDTMqshFj775YroHkE8Wl7U&_nc_zt=23&_nc_ht=scontent-mxp1-1.xx&edm=AAwGEdEEAAAA&_nc_gid=WkLa0gMWWk3TbE7IlRlYMQ&_nc_tpa=Q5bMBQF_nYWeL7PZbYitNlmJtlaM_X5XWioFnYZnud1wSVy9Mo_ORsajesKW_2ev8fIbG0EJTCmRmw7vaQ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQEDchyrCtMlyDymsAzisw8sHOuBD2EQqO4R-nIf-n00ww&oe=6A74A770",
-      "whatsapp": null,
-      "salesperson": "مهندس كريم",
-      "account": "el1",
-      "month": "2026-07",
-      "effective_status": "ACTIVE",
-      "start_time": null,
-      "end_time": null,
-      "daily_budget": null,
-      "spend": 1566.83,
-      "messages": 14,
-      "impressions": 9049,
-      "cost_per_message": 111.92
     },
     {
       "account_id": "648114383956047",
@@ -4234,10 +4212,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 1295.82,
+      "spend": 1295.9,
       "messages": 12,
-      "impressions": 13912,
-      "cost_per_message": 107.98
+      "impressions": 13920,
+      "cost_per_message": 107.99
     },
     {
       "account_id": "648114383956047",
@@ -4300,10 +4278,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 1167.55,
+      "spend": 1167.6,
       "messages": 13,
-      "impressions": 3524,
-      "cost_per_message": 89.81
+      "impressions": 3527,
+      "cost_per_message": 89.82
     },
     {
       "account_id": "648114383956047",
@@ -4322,10 +4300,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 1158.75,
+      "spend": 1158.87,
       "messages": 15,
-      "impressions": 9525,
-      "cost_per_message": 77.25
+      "impressions": 9539,
+      "cost_per_message": 77.26
     },
     {
       "account_id": "648114383956047",
@@ -4388,10 +4366,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 1107.47,
+      "spend": 1107.58,
       "messages": 13,
-      "impressions": 2856,
-      "cost_per_message": 85.19
+      "impressions": 2858,
+      "cost_per_message": 85.2
     },
     {
       "account_id": "648114383956047",
@@ -4432,9 +4410,9 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 1032.96,
+      "spend": 1036.05,
       "messages": 0,
-      "impressions": 9333,
+      "impressions": 9365,
       "cost_per_message": null
     },
     {
@@ -4454,10 +4432,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 1024.12,
+      "spend": 1024.87,
       "messages": 22,
-      "impressions": 10009,
-      "cost_per_message": 46.55
+      "impressions": 10020,
+      "cost_per_message": 46.58
     },
     {
       "account_id": "648114383956047",
@@ -4476,10 +4454,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 1021.74,
+      "spend": 1023.14,
       "messages": 8,
-      "impressions": 3168,
-      "cost_per_message": 127.72
+      "impressions": 3170,
+      "cost_per_message": 127.89
     },
     {
       "account_id": "648114383956047",
@@ -4498,10 +4476,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 1018.65,
+      "spend": 1018.78,
       "messages": 13,
-      "impressions": 7002,
-      "cost_per_message": 78.36
+      "impressions": 7014,
+      "cost_per_message": 78.37
     },
     {
       "account_id": "648114383956047",
@@ -4520,10 +4498,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 936.54,
+      "spend": 937.26,
       "messages": 16,
-      "impressions": 6481,
-      "cost_per_message": 58.53
+      "impressions": 6493,
+      "cost_per_message": 58.58
     },
     {
       "account_id": "775931245471232",
@@ -4533,7 +4511,7 @@
       "ad_id": "6983471817932",
       "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
       "creativeLink": "https://www.facebook.com/ads/library/?id=6983471817932",
-      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=iss72bRg1lNV7MFqS-Kw5Q&_nc_tpa=Q5bMBQGOHpArbB6uBuaVJAH_IpyHYZoh67nrIXFSa0t66oTNMwzBxJUQRR3A0xi2HFdkkKOuyMQUjOpheQ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQE1ZTsJ_2aK2lGxSIt57eee7Puuq3UhXdih4xeIBBkKnQ&oe=6A74B3A2",
+      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=KH4DxWnq0dbCLc-O2M5nlw&_nc_tpa=Q5bMBQFicug6Gdx5v210Utvdh20qVKmlpZOQMDm_DII1SW4-7fjQW1NpXApS5r9WKfonmk1dD2w5UqNR8Q&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQGUWBkv-zXEe6eexmNAN33RpcSwrY2JvOVi1W9OPHs4yw&oe=6A74EBE2",
       "whatsapp": null,
       "salesperson": "ندي",
       "account": "Ellwaa one",
@@ -4564,10 +4542,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 892.05,
+      "spend": 892.21,
       "messages": 15,
-      "impressions": 2744,
-      "cost_per_message": 59.47
+      "impressions": 2747,
+      "cost_per_message": 59.48
     },
     {
       "account_id": "648114383956047",
@@ -4599,7 +4577,7 @@
       "ad_id": "52563763247136",
       "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
       "creativeLink": "https://www.facebook.com/ads/library/?id=52563763247136",
-      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=r_NMfcFnE7md4x-JUv8yPw&_nc_tpa=Q5bMBQH1FRSX_08ys4ZxQW83VDCDP_JcfsxUV_uCZoz466qnfVuvtHpNmwYZLpVwSJhy3lmWulL0Ld1xXQ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQGvr9M6dzDxRXBR0J1Sv0Dfn4OlOYRl8N_oXpBXYzKPrw&oe=6A74B3A2",
+      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=1-KbHJiXQVHQNSQA2_0qPQ&_nc_tpa=Q5bMBQEOk-6yGf4Ak3JZpqd-PGOloGc6jEXuPeksfDMnVDZ1VtLgLiiwZ52hpQ-ScrNpM5w6ecqGnpfCsQ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQH6OiOTwLGXiZOi1U6kZUZndAn6deNL2_JnVuos8JVoJA&oe=6A74EBE2",
       "whatsapp": null,
       "salesperson": "امير المحاسب",
       "account": "Ellwaa one",
@@ -4608,10 +4586,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 854.22,
+      "spend": 854.48,
       "messages": 8,
-      "impressions": 7196,
-      "cost_per_message": 106.78
+      "impressions": 7200,
+      "cost_per_message": 106.81
     },
     {
       "account_id": "648114383956047",
@@ -4652,9 +4630,9 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 802.34,
+      "spend": 802.43,
       "messages": 17,
-      "impressions": 11159,
+      "impressions": 11168,
       "cost_per_message": 47.2
     },
     {
@@ -4674,9 +4652,9 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 774.55,
+      "spend": 774.64,
       "messages": 16,
-      "impressions": 13081,
+      "impressions": 13095,
       "cost_per_message": 48.41
     },
     {
@@ -4718,10 +4696,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 723.82,
+      "spend": 724.32,
       "messages": 10,
-      "impressions": 7552,
-      "cost_per_message": 72.38
+      "impressions": 7567,
+      "cost_per_message": 72.43
     },
     {
       "account_id": "648114383956047",
@@ -4762,10 +4740,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 654.05,
+      "spend": 654.44,
       "messages": 19,
-      "impressions": 13924,
-      "cost_per_message": 34.42
+      "impressions": 13958,
+      "cost_per_message": 34.44
     },
     {
       "account_id": "648114383956047",
@@ -4784,10 +4762,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 642.44,
+      "spend": 642.49,
       "messages": 9,
-      "impressions": 1389,
-      "cost_per_message": 71.38
+      "impressions": 1390,
+      "cost_per_message": 71.39
     },
     {
       "account_id": "648114383956047",
@@ -4806,10 +4784,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 640.98,
+      "spend": 641.07,
       "messages": 5,
-      "impressions": 2282,
-      "cost_per_message": 128.2
+      "impressions": 2284,
+      "cost_per_message": 128.21
     },
     {
       "account_id": "648114383956047",
@@ -4828,10 +4806,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 627.33,
+      "spend": 627.71,
       "messages": 3,
-      "impressions": 3193,
-      "cost_per_message": 209.11
+      "impressions": 3198,
+      "cost_per_message": 209.24
     },
     {
       "account_id": "961170320177419",
@@ -4841,7 +4819,7 @@
       "ad_id": "120249141601570756",
       "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
       "creativeLink": "https://www.facebook.com/ads/library/?id=120249141601570756",
-      "thumbnail_url": "https://scontent-mxp1-1.xx.fbcdn.net/v/t15.5256-10/747736331_1884371599187426_1995924932466834158_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=qgWFt4u-xw8Q7kNvwGJ-gw0&_nc_oc=Adqq_nVxd0APF8jX-af_fsiTgu773qB0DxJmBUhrbgNvz_uLxqwenB0_0Pu4jhuOpBc&_nc_zt=23&_nc_ht=scontent-mxp1-1.xx&edm=AAwGEdEEAAAA&_nc_gid=Tca_C6WBVl82uzdT4vtyxA&_nc_tpa=Q5bMBQEA1Wz60K62uaxHNt0SwzuuJGYRX9QZDJ10fDvwV1M1-PLOTych5KX3BH7MzSigr0nwXMtST3Amag&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQGZzKuoVIq7AErPdHLpf2pldsThmcEmyCdNCjbu9X_otg&oe=6A74AEF8",
+      "thumbnail_url": "https://scontent-mxp1-1.xx.fbcdn.net/v/t15.5256-10/747736331_1884371599187426_1995924932466834158_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=qgWFt4u-xw8Q7kNvwGJ-gw0&_nc_oc=Adqq_nVxd0APF8jX-af_fsiTgu773qB0DxJmBUhrbgNvz_uLxqwenB0_0Pu4jhuOpBc&_nc_zt=23&_nc_ht=scontent-mxp1-1.xx&edm=AAwGEdEEAAAA&_nc_gid=ltzhqHXYtckVp-QirDgTDQ&_nc_tpa=Q5bMBQHMTFLMEMCX6-glep3fUDWAppPzrqgQlJ_-LIm0dfLGs6ROMiH90u4yhoD4Ovm95CJDjfozejbRaw&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQHjir1pIpkqtUnvH5cPmOlNmC6N8pJCjKBs1OHg2VYP1g&oe=6A74E738",
       "whatsapp": null,
       "salesperson": "مهندس كريم",
       "account": "el1",
@@ -4872,10 +4850,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 614.04,
+      "spend": 614.06,
       "messages": 10,
-      "impressions": 3673,
-      "cost_per_message": 61.4
+      "impressions": 3674,
+      "cost_per_message": 61.41
     },
     {
       "account_id": "648114383956047",
@@ -4894,10 +4872,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 607.74,
+      "spend": 607.96,
       "messages": 10,
-      "impressions": 8968,
-      "cost_per_message": 60.77
+      "impressions": 8990,
+      "cost_per_message": 60.8
     },
     {
       "account_id": "648114383956047",
@@ -4938,10 +4916,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 564.42,
+      "spend": 564.72,
       "messages": 25,
-      "impressions": 7557,
-      "cost_per_message": 22.58
+      "impressions": 7571,
+      "cost_per_message": 22.59
     },
     {
       "account_id": "648114383956047",
@@ -4960,10 +4938,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 548.42,
+      "spend": 548.62,
       "messages": 8,
-      "impressions": 6806,
-      "cost_per_message": 68.55
+      "impressions": 6812,
+      "cost_per_message": 68.58
     },
     {
       "account_id": "648114383956047",
@@ -4984,7 +4962,7 @@
       "daily_budget": null,
       "spend": 528.24,
       "messages": 3,
-      "impressions": 3341,
+      "impressions": 3343,
       "cost_per_message": 176.08
     },
     {
@@ -5048,10 +5026,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 487.64,
+      "spend": 487.69,
       "messages": 1,
-      "impressions": 2500,
-      "cost_per_message": 487.64
+      "impressions": 2501,
+      "cost_per_message": 487.69
     },
     {
       "account_id": "648114383956047",
@@ -5070,10 +5048,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 470.7,
+      "spend": 472.49,
       "messages": 17,
-      "impressions": 5367,
-      "cost_per_message": 27.69
+      "impressions": 5381,
+      "cost_per_message": 27.79
     },
     {
       "account_id": "775931245471232",
@@ -5083,7 +5061,7 @@
       "ad_id": "52560257751136",
       "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
       "creativeLink": "https://www.facebook.com/ads/library/?id=52560257751136",
-      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=hz6L58zNvMIkmDTuxviqJg&_nc_tpa=Q5bMBQFaXK5l_tV1HipIs-DLlA_GNaOoR-a0QWusfem3peY_JcfqznuUUNnmuHnczCWXnmHzgZGW_nxB-Q&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQE5jWi_EMGvZSURKF7OsqO6TwbMKud25ukZvjN2Br6BAw&oe=6A74B3A2",
+      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=1PlwftA-Km8UaCE01k4j8Q&_nc_tpa=Q5bMBQFT4XdhgZ0jiv41iMVqHpZUarxTUiesDMHEe63bke6Tuc6RCBY5se7XTYp7d7ahF_xBk39UGwC7lg&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQFDUxrlaxI5-TxSDK09YBMvWlb3oJVOqtZEYXI4ioP4eg&oe=6A74EBE2",
       "whatsapp": null,
       "salesperson": "مهندس كريم",
       "account": "Ellwaa one",
@@ -5092,10 +5070,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 444.14,
+      "spend": 444.75,
       "messages": 20,
-      "impressions": 7314,
-      "cost_per_message": 22.21
+      "impressions": 7326,
+      "cost_per_message": 22.24
     },
     {
       "account_id": "648114383956047",
@@ -5158,10 +5136,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 401.33,
+      "spend": 401.85,
       "messages": 8,
-      "impressions": 11838,
-      "cost_per_message": 50.17
+      "impressions": 11854,
+      "cost_per_message": 50.23
     },
     {
       "account_id": "775931245471232",
@@ -5171,7 +5149,7 @@
       "ad_id": "52557734660336",
       "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
       "creativeLink": "https://www.facebook.com/ads/library/?id=52557734660336",
-      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/721297292_1743549583752545_6544117414473322281_n.jpg?_nc_cat=100&ccb=1-7&_nc_ohc=vVXkTwXJ2lEQ7kNvwHORgki&_nc_oc=AdoqcVfnwebgQIvvo99U3weFO2WKlNIdB5X2BTomPMbppf_6ft3TDZ7PfZ_DN49XV-A&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=Y5MXyUWfdGYQrWsIxjJ-NA&_nc_tpa=Q5bMBQEsR5oogDkpzUI1e6bPXyaxAMIbvpGG93aluPzrNhCdjsppl2HJu-QoCleXntspVSRLYk7KyTt3Yg&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQENBELrz4VPwvJj7n2e3Y-6oeq99gjhYFWDLB1J8MZpdg&oe=6A749CF4",
+      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/721297292_1743549583752545_6544117414473322281_n.jpg?_nc_cat=100&ccb=1-7&_nc_ohc=vVXkTwXJ2lEQ7kNvwHORgki&_nc_oc=AdoqcVfnwebgQIvvo99U3weFO2WKlNIdB5X2BTomPMbppf_6ft3TDZ7PfZ_DN49XV-A&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=yfEDS7OJaIbLA6b0XDsAwA&_nc_tpa=Q5bMBQGCbbzNdcFZu6PYuPtTEQ3o8aNg8IyS4sHAIjkMs0QWykw1XtUQg7lq8jYYH_cebNFCQnJHWlLiew&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQEZHOkKx6296sfoSHBQ6au83qgVO2FKLPhr4QepXklsTQ&oe=6A74D534",
       "whatsapp": null,
       "salesperson": "امير المحاسب",
       "account": "Ellwaa one",
@@ -5334,10 +5312,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 345.26,
+      "spend": 346.59,
       "messages": 7,
-      "impressions": 1694,
-      "cost_per_message": 49.32
+      "impressions": 1697,
+      "cost_per_message": 49.51
     },
     {
       "account_id": "648114383956047",
@@ -5444,10 +5422,10 @@
       "start_time": null,
       "end_time": null,
       "daily_budget": null,
-      "spend": 240.43,
+      "spend": 240.79,
       "messages": 4,
-      "impressions": 1713,
-      "cost_per_message": 60.11
+      "impressions": 1717,
+      "cost_per_message": 60.2
     },
     {
       "account_id": "648114383956047",
@@ -5545,7 +5523,7 @@
       "ad_id": "120248971547550756",
       "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
       "creativeLink": "https://www.facebook.com/ads/library/?id=120248971547550756",
-      "thumbnail_url": "https://scontent-mxp1-1.xx.fbcdn.net/v/t15.5256-10/744028119_27366468672975468_4660290355759117700_n.jpg?_nc_cat=106&ccb=1-7&_nc_ohc=nz__Jb1COKUQ7kNvwFhTYdt&_nc_oc=AdrghJZagBtxgXj-vGAjHodS5i5wDDeiBEawQSHKeWiJFLgaze0SjFNWDvezGpMoft4&_nc_zt=23&_nc_ht=scontent-mxp1-1.xx&edm=AAwGEdEEAAAA&_nc_gid=u-pRxbFqxQsgrZP4yMB04A&_nc_tpa=Q5bMBQFHXRi-oQ03B4z3lHFU2GCltiewiFoBDT4aUeUN9pvd3JtDirW-ZMOhgUQr5JYh1D4xa6KNcnlddw&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQEPD9xKmLiZtQ1rvR_EQb7E6V2ZFMyBzht1eA6AJwP-5g&oe=6A74C70E",
+      "thumbnail_url": "https://scontent-mxp1-1.xx.fbcdn.net/v/t15.5256-10/744028119_27366468672975468_4660290355759117700_n.jpg?_nc_cat=106&ccb=1-7&_nc_ohc=nz__Jb1COKUQ7kNvwFhTYdt&_nc_oc=AdrghJZagBtxgXj-vGAjHodS5i5wDDeiBEawQSHKeWiJFLgaze0SjFNWDvezGpMoft4&_nc_zt=23&_nc_ht=scontent-mxp1-1.xx&edm=AAwGEdEEAAAA&_nc_gid=ytANWe2ksSsKWwVQV7NCRA&_nc_tpa=Q5bMBQHMdqFF8vuwnIDsTMfnCjVCkGnhhHwv3_BmHvUxWVoB66dYBHmk6u7WBnTUR1WGLNiIITTP8YGgoQ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQFObEKuRK84evPseQj91nGMBXYb_VK8GtBpgHlnGpSOAQ&oe=6A74C70E",
       "whatsapp": null,
       "salesperson": "احمد صبيح",
       "account": "el1",
@@ -5580,28 +5558,6 @@
       "messages": 1,
       "impressions": 930,
       "cost_per_message": 122.85
-    },
-    {
-      "account_id": "961170320177419",
-      "campaign_id": "120249374380700756",
-      "campaign": "كريم سعوديه",
-      "ad": "إعلان جديد بهدف التفاعل",
-      "ad_id": "120249374380690756",
-      "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
-      "creativeLink": "https://www.facebook.com/ads/library/?id=120249374380690756",
-      "thumbnail_url": "https://scontent-mxp1-1.xx.fbcdn.net/v/t15.5256-10/597442150_1897067401167612_8730106304945309404_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=2tsWAMBXWuQQ7kNvwFTNrgc&_nc_oc=AdrlCTEMlhxEc8frcbvMjaRJQdd8JGnbW98DK2np-L3EGDTMqshFj775YroHkE8Wl7U&_nc_zt=23&_nc_ht=scontent-mxp1-1.xx&edm=AAwGEdEEAAAA&_nc_gid=Mg2s_Kho6DLCENNGBPcDKQ&_nc_tpa=Q5bMBQEDttpPsWDO_alMnE4PuRLYPe9JTePswwaqkuywiMGp5PLacHmJMVT5XwVd7HgDAS7nnWeVdtPQSA&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQEqj9JBqEq9-rXttlJZzHJ5m7Qk-l4dxLSdcZ3G7tO7CQ&oe=6A74A770",
-      "whatsapp": null,
-      "salesperson": "مهندس كريم",
-      "account": "el1",
-      "month": "2026-08",
-      "effective_status": "ACTIVE",
-      "start_time": null,
-      "end_time": null,
-      "daily_budget": null,
-      "spend": 121.21,
-      "messages": 3,
-      "impressions": 1509,
-      "cost_per_message": 40.4
     },
     {
       "account_id": "648114383956047",
@@ -5655,7 +5611,7 @@
       "ad_id": "6992428456132",
       "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
       "creativeLink": "https://www.facebook.com/ads/library/?id=6992428456132",
-      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t39.30808-6/632001227_1195737159310293_2356245407488298878_n.jpg?_nc_cat=109&ccb=1-7&_nc_ohc=p5WCOQcz6r8Q7kNvwHa2rO6&_nc_oc=AdqsleIc6cQ84mDzy1wUqqlP7297YwN5RYlOJao8Qq2rvRxxCYXaLlqbQo85OiTrwis&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=ib-W00489t7CtKWV6AH02A&_nc_tpa=Q5bMBQGhlEsmrYgdMjzfVpH4BzlOLVvBRI4AfsgE_8fSnXpR635qlVzjkd20GwQs01HtCIJHwTWdaiIgpw&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=89be11&_nc_sid=58080a&oh=00_AQHSEdwU9ideKTU93OxfFDZvwc2yy8L7OrgZvnwA_PvMDg&oe=6A749984",
+      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t39.30808-6/632001227_1195737159310293_2356245407488298878_n.jpg?_nc_cat=109&ccb=1-7&_nc_ohc=p5WCOQcz6r8Q7kNvwHa2rO6&_nc_oc=AdqsleIc6cQ84mDzy1wUqqlP7297YwN5RYlOJao8Qq2rvRxxCYXaLlqbQo85OiTrwis&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=9o57nt-dtfYBvZ1CQf3W1A&_nc_tpa=Q5bMBQEyX5SMZGYG2rlwRMchjaqkNhjI6Zt0FJM9kU9gYjRMd07JkfQdV7yeYyU7XZf07iGyRYrppXZ9dQ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=89be11&_nc_sid=58080a&oh=00_AQF8yBup7YmLwspYZ04ubmD__Ze9p0dtdtsrvCevxAaQVw&oe=6A74D1C4",
       "whatsapp": null,
       "salesperson": "غير محدد",
       "account": "Ellwaa one",
@@ -5875,7 +5831,7 @@
       "ad_id": "52517423311336",
       "creativeType": "ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±ÃƒÆ’Ã†â€™Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©",
       "creativeLink": "https://www.facebook.com/ads/library/?id=52517423311336",
-      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=_ZtVBFynaMqW6aIPeNx6XA&_nc_tpa=Q5bMBQF0auvCmciiYdROoMNsoheUSo8MpnNarRjKMLjdBgbscXqmMVkdSgDib8imyrQzhMz40lujb67r8Q&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQEeS4tjSIBDYQHAqaa2zP0SjMftHyZ4187W0jK3O_zNCg&oe=6A74B3A2",
+      "thumbnail_url": "https://scontent-mxp2-1.xx.fbcdn.net/v/t15.5256-10/676744274_34989969063984798_1041784349788369967_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=j5Y8EWNaHq0Q7kNvwGr78c5&_nc_oc=AdqDO27kjdHtZCLBPv6TCCii_jLvV_R5oZXueUHhs_6mU1cJH8ZQKpY2gZ3e6oqS7b8&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&edm=AAwGEdEEAAAA&_nc_gid=30YmaR5Rn8Jynx58XoZ2gw&_nc_tpa=Q5bMBQHix2p9A8fwsApRBKcoDAUiLLyl2u9LA1QaRMg78aWDufjCQHXEeniAoNQKaLSK-BWAGIKZye7ZuQ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQE5efZGbuEVsvls9SY34R7FgKKP_a5o9T9zWb3gVNawRQ&oe=6A74EBE2",
       "whatsapp": null,
       "salesperson": "اشرف",
       "account": "Ellwaa one",
