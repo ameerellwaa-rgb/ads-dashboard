@@ -1,4 +1,4 @@
-﻿﻿﻿﻿<!DOCTYPE html>
+﻿﻿﻿﻿﻿<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
@@ -439,7 +439,7 @@
     .tag-archived { background: rgba(110,118,129,.15); color: var(--text-muted); }
     .tag-active   { background: rgba(63,185,80,.15);  color: var(--success-text); }
 
-    .ads-filter { display: flex; gap: 8px; padding: 0 0 14px; flex-wrap: wrap; }
+    .ads-filter { display: flex; gap: 8px; padding: 0 0 10px; flex-wrap: wrap; }
     .ads-filter-btn {
       padding: 6px 16px; border-radius: 20px; font-size: 12px; cursor: pointer;
       border: 0.5px solid var(--border-strong); background: transparent;
@@ -447,6 +447,16 @@
     }
     .ads-filter-btn:hover { color: var(--text); }
     .ads-filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+    .ads-sort { display: flex; align-items: center; gap: 6px; padding: 0 0 14px; flex-wrap: wrap; border-bottom: 0.5px solid var(--border); margin-bottom: 14px; }
+    .ads-sort-label { font-size: 11px; color: var(--text-muted); margin-left: 6px; white-space: nowrap; }
+    .ads-sort-btn {
+      padding: 4px 12px; border-radius: 20px; font-size: 11px; cursor: pointer;
+      border: 0.5px solid var(--border-strong); background: transparent;
+      color: var(--text-muted); font-family: inherit; transition: all 0.15s;
+    }
+    .ads-sort-btn:hover { color: var(--text); border-color: var(--border-strong); }
+    .ads-sort-btn.active { background: var(--surface2); border-color: var(--accent); color: var(--accent-text); }
 
     .ad-extra-row {
       display: flex; flex-wrap: wrap; gap: 14px; font-size: 11px;
@@ -537,6 +547,14 @@
       <button class="ads-filter-btn" data-status="active" onclick="setAdsStatus('active')">نشط</button>
       <button class="ads-filter-btn" data-status="stopped" onclick="setAdsStatus('stopped')">موقوف أو محذوف</button>
     </div>
+    <div class="ads-sort">
+      <span class="ads-sort-label">ترتيب حسب:</span>
+      <button class="ads-sort-btn active" data-sort="spend_desc" onclick="setAdsSort('spend_desc')">أعلى صرف</button>
+      <button class="ads-sort-btn" data-sort="spend_asc" onclick="setAdsSort('spend_asc')">أقل صرف</button>
+      <button class="ads-sort-btn" data-sort="cpm_asc" onclick="setAdsSort('cpm_asc')">أقل سعر رسالة</button>
+      <button class="ads-sort-btn" data-sort="cpm_desc" onclick="setAdsSort('cpm_desc')">أعلى سعر رسالة</button>
+      <button class="ads-sort-btn" data-sort="days_desc" onclick="setAdsSort('days_desc')">أطول تشغيل</button>
+    </div>
     <div class="ads-main-grid" id="adsGrid"></div>
   </div>
 </div>
@@ -565,6 +583,7 @@ let currentMonth = '';
 let currentOwner = '';
 let expandedCards = {};
 let currentAdsStatus = 'all';
+let currentAdsSort = 'spend_desc';
 
 const fmt = n => Math.round(n).toLocaleString('ar-EG');
 const fmtD = (n, d) => Number(n).toFixed(d);
@@ -914,6 +933,14 @@ function setAdsStatus(status) {
   renderAds(currentMonth);
 }
 
+function setAdsSort(sort) {
+  currentAdsSort = sort;
+  document.querySelectorAll('.ads-sort-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.sort === sort);
+  });
+  renderAds(currentMonth);
+}
+
 function renderAds(month) {
   let allAds = getAdsAggregated(month)
     .filter(a => ownerOf(a.account) === currentOwner);
@@ -922,7 +949,11 @@ function renderAds(month) {
   } else if (currentAdsStatus === 'stopped') {
     allAds = allAds.filter(a => a.effective_status && a.effective_status !== 'ACTIVE');
   }
-  allAds.sort((a, b) => a.cost_per_message - b.cost_per_message);
+  if      (currentAdsSort === 'spend_desc') allAds.sort((a, b) => b.spend - a.spend);
+  else if (currentAdsSort === 'spend_asc')  allAds.sort((a, b) => a.spend - b.spend);
+  else if (currentAdsSort === 'cpm_asc')    allAds.sort((a, b) => (a.cost_per_message || Infinity) - (b.cost_per_message || Infinity));
+  else if (currentAdsSort === 'cpm_desc')   allAds.sort((a, b) => (b.cost_per_message || 0) - (a.cost_per_message || 0));
+  else if (currentAdsSort === 'days_desc')  allAds.sort((a, b) => (daysRunning(b.start_time) || 0) - (daysRunning(a.start_time) || 0));
 
   const totalSpend = allAds.reduce((a, d) => a + d.spend, 0);
   const totalMsg   = allAds.reduce((a, d) => a + d.messages, 0);
@@ -1057,6 +1088,10 @@ function setOwner(el, owner) {
   currentAdsStatus = 'all';
   document.querySelectorAll('.ads-filter-btn').forEach(b => {
     b.classList.toggle('active', b.dataset.status === 'all');
+  });
+  currentAdsSort = 'spend_desc';
+  document.querySelectorAll('.ads-sort-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.sort === 'spend_desc');
   });
   render();
 }
