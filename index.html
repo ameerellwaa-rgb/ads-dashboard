@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿<!DOCTYPE html>
+﻿﻿﻿﻿﻿﻿<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
@@ -471,6 +471,15 @@
       background: rgba(248,81,73,.15); color: var(--danger-text);
     }
     .ad-mini-stopped { opacity: 0.7; }
+    .no-ads-label {
+      font-size: 11px; color: var(--text-muted); font-weight: 400;
+    }
+    .stopped-badge {
+      display: inline-flex; align-items: center; gap: 3px;
+      font-size: 10px; padding: 2px 7px; border-radius: 8px;
+      background: var(--danger-bg); color: var(--danger-text);
+      margin-left: 5px; vertical-align: middle;
+    }
   </style>
 </head>
 <body>
@@ -817,13 +826,15 @@ function renderSales(month) {
                               const sb = (b.effective_status || 'ACTIVE') === 'ACTIVE' ? 0 : 1;
                               return sa !== sb ? sa - sb : a.cost_per_message - b.cost_per_message;
                             });
+    const hasActiveAds = salesAds.some(a => (a.effective_status || 'ACTIVE') === 'ACTIVE');
+    const noSpend = s.spend === 0 || s.spend < 0.01;
 
     const div = document.createElement('div');
     div.className = 'card';
     div.innerHTML = `
       <div class="card-header">
         <div>
-          <div class="card-name">${s.salesperson}</div>
+          <div class="card-name">${s.salesperson}${salesAds.length > 0 && noSpend ? ' <span class="no-ads-label">(بدون إنفاق)</span>' : (!hasActiveAds && salesAds.length > 0 ? ' <span class="no-ads-label">(إعلانات موقفة)</span>' : '')}</div>
         </div>
       </div>
       <div class="stats-grid">
@@ -861,8 +872,8 @@ function renderSales(month) {
         <div class="ad-mini${stopped ? ' ad-mini-stopped' : ''}">
           ${thumbSm(ad.thumbnail_url, fixType(ad.creativeType))}
           <div class="ad-mini-info">
-            <div class="ad-mini-camp">${ad.campaign}${stopped ? `<span class="mini-status-badge">${stLbl}</span>` : ''}</div>
-            <div class="ad-mini-name">${ad.ad}</div>
+            <div class="ad-mini-camp">${ad.campaign}</div>
+            <div class="ad-mini-name">${ad.ad}${stopped ? `<span class="stopped-badge"><i class="ti ti-pause-circle" aria-hidden="true"></i> ${stLbl}</span>` : ''}</div>
           </div>
           <div class="ad-mini-spend">${fmt(ad.spend)} ج</div>
         </div>
